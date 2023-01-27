@@ -1,0 +1,13 @@
+name = "Kanzashi"
+filename = "kanzashi-1.0.4+1.19.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/pxrSeTAq/versions/Sibss4e3/kanzashi-1.0.4%2B1.19.2.jar"
+hash-format = "sha1"
+hash = "c981e47d1bd0f5e9a11f5225a0d39e45b6cb948d"
+
+[update]
+[update.modrinth]
+mod-id = "pxrSeTAq"
+version = "Sibss4e3"
