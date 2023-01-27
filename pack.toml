@@ -1,4 +1,4 @@
-name = "extra.minecraft.ashwalker.net"
+name = "minecraft.ashwalker.net"
 author = "Ash"
 version = "1.0.0"
 pack-format = "packwiz:1.1.0"
@@ -6,7 +6,7 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "1c72445cc178fad4173d5efbfa62c36d1ad9534cbf895577d4359b158c5f0a82"
+hash = "4df1241242c166572abf3f2f0b94a9a0a64f90c09c4e94b4e49cca9b1d575dfa"
 
 [versions]
 minecraft = "1.19.2"
