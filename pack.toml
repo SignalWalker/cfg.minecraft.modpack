@@ -1,0 +1,13 @@
+name = "extra.client.minecraft.ashwalker.net"
+author = "Ash"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "1c72445cc178fad4173d5efbfa62c36d1ad9534cbf895577d4359b158c5f0a82"
+
+[versions]
+minecraft = "1.19.2"
+quilt = "0.18.1-beta.60"
