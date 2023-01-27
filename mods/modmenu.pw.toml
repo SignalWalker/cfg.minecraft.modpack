@@ -11,3 +11,8 @@ hash = "495674289dcba88b6df3d86b7590c7b192b993fe"
 [update.modrinth]
 mod-id = "mOgUt4GM"
 version = "V4hnfgRO"
+
+[option]
+optional = true
+default = true
+description = "Mod settings menu."

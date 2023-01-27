@@ -11,3 +11,8 @@ hash = "d82700772659f65560202f1cbd0e744007b21a75"
 [update.modrinth]
 mod-id = "1IjD5062"
 version = "xTtULC68"
+
+[option]
+optional = true
+default = true
+description = "Nicer connected textures."

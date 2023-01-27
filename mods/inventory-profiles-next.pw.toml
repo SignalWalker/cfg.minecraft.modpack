@@ -11,3 +11,8 @@ hash = "0cbeb80eef0d3aeaca167f134ad3b3538829ca09"
 [update.modrinth]
 mod-id = "O7RBXm3n"
 version = "MhAqqBsB"
+
+[option]
+optional = true
+default = true
+description = "Inventory sorting buttons."

@@ -11,3 +11,8 @@ hash = "a77fb15f91a7b2838c9d402e9e01ed46a3f0cd02"
 [update.modrinth]
 mod-id = "uCdwusMi"
 version = "yEUygWBv"
+
+[option]
+optional = true
+default = true
+description = "Efficient extremely far render distance."

@@ -11,3 +11,8 @@ hash = "3f5b2b9b3eb7e0a4e8e3940f3850a86953ef72c8"
 [update.modrinth]
 mod-id = "FIlZB9L0"
 version = "BMKdpZ8z"
+
+[option]
+optional = true
+default = true
+description = "Fancier world generation."

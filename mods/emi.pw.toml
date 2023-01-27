@@ -11,3 +11,8 @@ hash = "7fbc1e89aea1ced411a8656b75ada4bf889a08bc"
 [update.modrinth]
 mod-id = "fRiHVvU7"
 version = "7z5aEkkm"
+
+[option]
+optional = true
+default = true
+description = "Fancier inventory UI."

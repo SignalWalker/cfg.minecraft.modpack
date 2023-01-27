@@ -11,3 +11,8 @@ hash = "0ac09c47fba094d22e52fe6e53f990be63f650d8"
 [update.modrinth]
 mod-id = "w7ThoJFB"
 version = "f017okM4"
+
+[option]
+optional = true
+default = true
+description = "Keybind for zooming in/out."
