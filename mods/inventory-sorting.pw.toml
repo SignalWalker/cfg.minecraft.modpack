@@ -11,3 +11,8 @@ hash = "6ce11087da3555f0f48e18e067384abae3e5acc6"
 [update.modrinth]
 mod-id = "5ibSyLAz"
 version = "ZsKcCN1N"
+
+[option]
+optional = true
+default = true
+description = "Adds a button to sort items in a chest / inventory."
