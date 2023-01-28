@@ -7,7 +7,7 @@ metafile = true
 
 [[files]]
 file = "mods/appleskin.pw.toml"
-hash = "4d571d5ebe245ffb62a0df83e81d1c03670807d3528650d6dd9c983bd26ae860"
+hash = "efa1db3866d85e6d78c2b6eff3c95f35158c2af52d581ac374d06cab16378a32"
 metafile = true
 
 [[files]]
@@ -17,7 +17,7 @@ metafile = true
 
 [[files]]
 file = "mods/continuity.pw.toml"
-hash = "3cbe3d523b39667928fcc34f71651b0e581e5c541dd5ecf17228464770466bc5"
+hash = "06f5f162093698d04d2256a96c027a48b23824d9dfae913ef068d5e8f2e746cf"
 metafile = true
 
 [[files]]
@@ -27,12 +27,12 @@ metafile = true
 
 [[files]]
 file = "mods/distanthorizons.pw.toml"
-hash = "bf466c25f51d243f814c775ea0b24bc98846b2f8de550c6c45c9ad421562e313"
+hash = "4795f8d8ecbe543f87367a415b58c9c95bd8f13e79e8288008e3fc664deeba15"
 metafile = true
 
 [[files]]
 file = "mods/emi.pw.toml"
-hash = "31d8b702aa46b73a8885e3b2fab07732f3387924d6ea7cfc8c753e7eb73465c4"
+hash = "90476294fdc4ba2acc45f24d23b8b8ec4f0504033c6a3073e8693810535f293a"
 metafile = true
 
 [[files]]
@@ -62,7 +62,7 @@ metafile = true
 
 [[files]]
 file = "mods/journeymap.pw.toml"
-hash = "30674895795238465a459627b3866840012db27328d9b5b5a319bfdcf4f65915"
+hash = "c8e49d8d4b5997186bc1950bdd990eb059237feb4080f8e5692d0a6b62e27996"
 metafile = true
 
 [[files]]
@@ -72,17 +72,17 @@ metafile = true
 
 [[files]]
 file = "mods/lambdynamiclights.pw.toml"
-hash = "9b628c73b749c901f12ba08b8304c161801903b1dd3fdbb6d4b93a9d42d25afa"
+hash = "6381cb845cc527c234539cd94a3e654a2da0b559d39277793cbc32763b6b2128"
 metafile = true
 
 [[files]]
 file = "mods/lazydfu.pw.toml"
-hash = "b4ca05b39b85c27cd97ccb65d5fb832f5e9fd7ee5710542a3e69dfa30a97ea7d"
+hash = "6e27a71bd2c20a3cbc75363ee6b383b97488f24df0feb4fc6455218fe0ac17c6"
 metafile = true
 
 [[files]]
 file = "mods/letsleepingdogslie.pw.toml"
-hash = "952750128606f2e8a6d38802b937c6682f2558757b2724b51e931858d5171ae5"
+hash = "5bbb51cabd2547d2f909086222fc2dfbc83dd14255e82da317e1976f7db15bf3"
 metafile = true
 
 [[files]]
@@ -112,12 +112,12 @@ metafile = true
 
 [[files]]
 file = "mods/modmenu.pw.toml"
-hash = "09eb7db3ca7778d91ad66845e41b6b4814655fe375a05d4a69528c74b4f1c8af"
+hash = "2317c412ec410096064e1607f60b2090191edd6db18b95ca273582debc7ea3a2"
 metafile = true
 
 [[files]]
 file = "mods/orientation.pw.toml"
-hash = "eed11ca8f6957b5a22b33fde2a8db6a0370f6f3bf258e6e6242994129438a9f1"
+hash = "417b560ed65c8733c800a65f1f71b03184ded862d6e7dbb5ba425ce97d35c08b"
 metafile = true
 
 [[files]]
@@ -157,7 +157,7 @@ metafile = true
 
 [[files]]
 file = "mods/terra.pw.toml"
-hash = "b3061c52ef9d8cf3332fc36d556a4a953a093a028376a517e2f8746edf0f7419"
+hash = "8eca706444537cd203215747c1766f6269cbb8c56038d2ad812d06c65d277242"
 metafile = true
 
 [[files]]
@@ -182,5 +182,5 @@ metafile = true
 
 [[files]]
 file = "mods/zoomify.pw.toml"
-hash = "df9929f0a90f0c54a870ed182c0543ce579d07b84089d2fec6131917c53b5bab"
+hash = "400ae8474b2877207a56e3bcc917581e98b4d877125d00314fab41ae9c81bde3"
 metafile = true
