@@ -31,11 +31,6 @@ hash = "eb15826e2cfc25210e3acd00b6998804b0dde55a433a881af75277172bdeb6f4"
 metafile = true
 
 [[files]]
-file = "mods/distanthorizons.pw.toml"
-hash = "4795f8d8ecbe543f87367a415b58c9c95bd8f13e79e8288008e3fc664deeba15"
-metafile = true
-
-[[files]]
 file = "mods/ebe.pw.toml"
 hash = "9088a6df105aafe85c41583531572aa6341ad0b9bdfe1855529cc6fca26a7672"
 metafile = true
@@ -86,11 +81,6 @@ hash = "c8e49d8d4b5997186bc1950bdd990eb059237feb4080f8e5692d0a6b62e27996"
 metafile = true
 
 [[files]]
-file = "mods/kanzashi.pw.toml"
-hash = "6fef7a861106b60f06c174a5f10520be21232626028a848c10e14fef9ecb5f75"
-metafile = true
-
-[[files]]
 file = "mods/lambdynamiclights.pw.toml"
 hash = "6381cb845cc527c234539cd94a3e654a2da0b559d39277793cbc32763b6b2128"
 metafile = true
@@ -103,11 +93,6 @@ metafile = true
 [[files]]
 file = "mods/letsleepingdogslie.pw.toml"
 hash = "5bbb51cabd2547d2f909086222fc2dfbc83dd14255e82da317e1976f7db15bf3"
-metafile = true
-
-[[files]]
-file = "mods/libipn.pw.toml"
-hash = "562362e7aca8c229409c6413cf686f77b3a734725a8b9a9704b53501f14446ed"
 metafile = true
 
 [[files]]
@@ -143,11 +128,6 @@ metafile = true
 [[files]]
 file = "mods/modmenu.pw.toml"
 hash = "2317c412ec410096064e1607f60b2090191edd6db18b95ca273582debc7ea3a2"
-metafile = true
-
-[[files]]
-file = "mods/orientation.pw.toml"
-hash = "417b560ed65c8733c800a65f1f71b03184ded862d6e7dbb5ba425ce97d35c08b"
 metafile = true
 
 [[files]]
@@ -196,26 +176,6 @@ hash = "8eca706444537cd203215747c1766f6269cbb8c56038d2ad812d06c65d277242"
 metafile = true
 
 [[files]]
-file = "mods/trinkets.pw.toml"
-hash = "e4e021f4e9647d01496dfd9f4dbf77cf46575318bd54f40aac7d3b4996baecb8"
-metafile = true
-
-[[files]]
-file = "mods/villager-hats.pw.toml"
-hash = "25bebe455474370ab23503a43ed39ea7905f87108a68eeaa9186f66e4729363c"
-metafile = true
-
-[[files]]
 file = "mods/windchimes.pw.toml"
 hash = "da56f8d502498b731410138e36d618600fc7c3bff2d99cb342af1c6ef9840823"
-metafile = true
-
-[[files]]
-file = "mods/yacl.pw.toml"
-hash = "80bab11e8d1438ec93695050f087dc2f9d0ae1d2523a17b8236af7029f14119e"
-metafile = true
-
-[[files]]
-file = "mods/zoomify.pw.toml"
-hash = "400ae8474b2877207a56e3bcc917581e98b4d877125d00314fab41ae9c81bde3"
 metafile = true
