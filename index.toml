@@ -61,6 +61,11 @@ hash = "e8168531c092676d47cac3657bfc525f096f11ff5372ce6e322ad57778b81635"
 metafile = true
 
 [[files]]
+file = "mods/inventory-profiles-next.pw.toml"
+hash = "d50cba471a9055731e2a5c2e96bc3da3130079c1c573ee85d57c08ec4d999581"
+metafile = true
+
+[[files]]
 file = "mods/iris.pw.toml"
 hash = "5828b6d7de70c7bb99117295988b0ac6d6723503e36cf56bce249bff738b4daa"
 metafile = true
