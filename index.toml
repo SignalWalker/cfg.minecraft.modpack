@@ -26,8 +26,18 @@ hash = "19783c9eb3f9c3a9522f47f11fa9b87dd62b64a42e52cadbdf9ce9d5c8d73d46"
 metafile = true
 
 [[files]]
+file = "mods/dashloader.pw.toml"
+hash = "eb15826e2cfc25210e3acd00b6998804b0dde55a433a881af75277172bdeb6f4"
+metafile = true
+
+[[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "4795f8d8ecbe543f87367a415b58c9c95bd8f13e79e8288008e3fc664deeba15"
+metafile = true
+
+[[files]]
+file = "mods/ebe.pw.toml"
+hash = "9088a6df105aafe85c41583531572aa6341ad0b9bdfe1855529cc6fca26a7672"
 metafile = true
 
 [[files]]
@@ -121,6 +131,16 @@ hash = "58ab921c1b4498f5fb5d73a8420eeae621095da045c00e6f51c2a75ca581c0ff"
 metafile = true
 
 [[files]]
+file = "mods/memoryleakfix.pw.toml"
+hash = "4716789e4a806c1cabcef27e67150215edb4c3d737e9a87d90f2f615d6c196cd"
+metafile = true
+
+[[files]]
+file = "mods/mixin-conflict-helper.pw.toml"
+hash = "7e1824a9d3c1ea8ba3e90a5efc8612fab91ad518d2fda8923eb157d5f9248572"
+metafile = true
+
+[[files]]
 file = "mods/modmenu.pw.toml"
 hash = "2317c412ec410096064e1607f60b2090191edd6db18b95ca273582debc7ea3a2"
 metafile = true
@@ -133,11 +153,6 @@ metafile = true
 [[files]]
 file = "mods/pehkui.pw.toml"
 hash = "0c137fc602775302c23539446a7d562d9f2b903aa0a972b85314088d1f705492"
-metafile = true
-
-[[files]]
-file = "mods/phosphor.pw.toml"
-hash = "466d5892937df5aa05388291463b163b42fa454d8bfd22713484a0167ca3702d"
 metafile = true
 
 [[files]]
@@ -163,6 +178,11 @@ metafile = true
 [[files]]
 file = "mods/sodium.pw.toml"
 hash = "aa4dcf55ac3191b0b31437521714c1d28364c3396cf06ef07fa76a08488c1837"
+metafile = true
+
+[[files]]
+file = "mods/starlight.pw.toml"
+hash = "2aeab4f3b0a720ed02f400d9b521f1858474d4f8f7c3577ce916d5aa31fe37e1"
 metafile = true
 
 [[files]]
