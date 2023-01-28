@@ -61,16 +61,6 @@ hash = "e8168531c092676d47cac3657bfc525f096f11ff5372ce6e322ad57778b81635"
 metafile = true
 
 [[files]]
-file = "mods/inventory-profiles-next.pw.toml"
-hash = "d50cba471a9055731e2a5c2e96bc3da3130079c1c573ee85d57c08ec4d999581"
-metafile = true
-
-[[files]]
-file = "mods/inventory-tabs-updated.pw.toml"
-hash = "a8ec5fd59ff7ddab287b339ca91c49af53ecea28105d764a1b560c4fbdfaf7d6"
-metafile = true
-
-[[files]]
 file = "mods/journeymap.pw.toml"
 hash = "30674895795238465a459627b3866840012db27328d9b5b5a319bfdcf4f65915"
 metafile = true
@@ -78,11 +68,6 @@ metafile = true
 [[files]]
 file = "mods/kanzashi.pw.toml"
 hash = "6fef7a861106b60f06c174a5f10520be21232626028a848c10e14fef9ecb5f75"
-metafile = true
-
-[[files]]
-file = "mods/krypton.pw.toml"
-hash = "998f45a9037fa4663bc5e2bea5de925bf4ce6352328fcaaa830db8466cc62416"
 metafile = true
 
 [[files]]

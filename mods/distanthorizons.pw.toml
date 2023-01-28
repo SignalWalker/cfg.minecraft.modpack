@@ -14,5 +14,5 @@ version = "yEUygWBv"
 
 [option]
 optional = true
-default = true
-description = "Efficient extremely far render distance."
+default = false
+description = "Efficient extremely far render distance. Warning: Causes rendering issues."
