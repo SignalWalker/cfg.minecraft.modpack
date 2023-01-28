@@ -86,11 +86,6 @@ hash = "6e27a71bd2c20a3cbc75363ee6b383b97488f24df0feb4fc6455218fe0ac17c6"
 metafile = true
 
 [[files]]
-file = "mods/letsleepingdogslie.pw.toml"
-hash = "5bbb51cabd2547d2f909086222fc2dfbc83dd14255e82da317e1976f7db15bf3"
-metafile = true
-
-[[files]]
 file = "mods/limits-grapple.pw.toml"
 hash = "d3e7af0e25bda336bf9991e8a4372b75212dab4fc74eaaebb33f04a5347ac17f"
 metafile = true
@@ -98,16 +93,6 @@ metafile = true
 [[files]]
 file = "mods/lithium.pw.toml"
 hash = "77e9a02e09ec5a0d6682e5f448953048d99e36da299d92627044aff0828798e3"
-metafile = true
-
-[[files]]
-file = "mods/llamarama.pw.toml"
-hash = "37f26b3c7b65f156859ebb36eb894ac22977c8551d98c06ed929560db0b91d12"
-metafile = true
-
-[[files]]
-file = "mods/luckyducks.pw.toml"
-hash = "58ab921c1b4498f5fb5d73a8420eeae621095da045c00e6f51c2a75ca581c0ff"
 metafile = true
 
 [[files]]
@@ -141,11 +126,6 @@ hash = "b2e3be698473bfb3f08865a11e74c9ee8d47239ac72a79d60acc1ee381722a50"
 metafile = true
 
 [[files]]
-file = "mods/scout.pw.toml"
-hash = "9220edac770c544c7c4aab53580f9a01b8e9e7a82e17f4bd7d4432b1b48998c9"
-metafile = true
-
-[[files]]
 file = "mods/sodium-extra.pw.toml"
 hash = "8da0d4c285e7e57aee3f08ab4e268d04518704ace4060744f042aef3a7f6bc50"
 metafile = true
@@ -168,9 +148,4 @@ metafile = true
 [[files]]
 file = "mods/terra.pw.toml"
 hash = "8eca706444537cd203215747c1766f6269cbb8c56038d2ad812d06c65d277242"
-metafile = true
-
-[[files]]
-file = "mods/windchimes.pw.toml"
-hash = "da56f8d502498b731410138e36d618600fc7c3bff2d99cb342af1c6ef9840823"
 metafile = true
