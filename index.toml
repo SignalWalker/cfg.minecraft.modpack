@@ -6,6 +6,21 @@ hash = "fda319290cfe268fdc7c6c6ca8dcad24e51c1de98442f23f2a41d657b26fc8d0"
 metafile = true
 
 [[files]]
+file = "mods/beautify-refabricated.pw.toml"
+hash = "e1763d7c3db605b4824378db6e1149d8b48e3ee0d7b06ce467a217eb96ab1f45"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "213cad77d46ff46fe20780b01856cb1a8812747e9c3564203669bf3905e646e2"
+metafile = true
+
+[[files]]
+file = "mods/connectible_chains.pw.toml"
+hash = "3bb5d79ae78bcfa2fcb08f3852c4c1ac1893569ac75ccc2e9131d9b17dc61f5c"
+metafile = true
+
+[[files]]
 file = "mods/continuity.pw.toml"
 hash = "06f5f162093698d04d2256a96c027a48b23824d9dfae913ef068d5e8f2e746cf"
 metafile = true
@@ -18,6 +33,11 @@ metafile = true
 [[files]]
 file = "mods/dashloader.pw.toml"
 hash = "eb15826e2cfc25210e3acd00b6998804b0dde55a433a881af75277172bdeb6f4"
+metafile = true
+
+[[files]]
+file = "mods/diagonal-fences.pw.toml"
+hash = "4f15070fd65003a7f2e99e7b622dfca850f33826a562fdb9f47a3e90653861c6"
 metafile = true
 
 [[files]]
@@ -38,6 +58,11 @@ metafile = true
 [[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "98da553a1ba2d41bfce3585198641c2d927c702d5403ebec82402ae51ddf707f"
+metafile = true
+
+[[files]]
+file = "mods/forge-config-api-port.pw.toml"
+hash = "7ae83690f725e59e7d527fc272e16a120a7fa683f25b4e4142b121b3828ecfc5"
 metafile = true
 
 [[files]]
@@ -108,6 +133,11 @@ metafile = true
 [[files]]
 file = "mods/pehkui.pw.toml"
 hash = "0c137fc602775302c23539446a7d562d9f2b903aa0a972b85314088d1f705492"
+metafile = true
+
+[[files]]
+file = "mods/puzzles-lib.pw.toml"
+hash = "0568443a68c429253e10bee7655f0baf669f1fd8dd06b39cb83423f6c522cadc"
 metafile = true
 
 [[files]]
