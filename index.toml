@@ -136,6 +136,11 @@ hash = "0c137fc602775302c23539446a7d562d9f2b903aa0a972b85314088d1f705492"
 metafile = true
 
 [[files]]
+file = "mods/polaroidcamera.pw.toml"
+hash = "fa9c87aee7283f245834928b05b69d8269d0b9884ffceddaf743b3fce46b025f"
+metafile = true
+
+[[files]]
 file = "mods/puzzles-lib.pw.toml"
 hash = "0568443a68c429253e10bee7655f0baf669f1fd8dd06b39cb83423f6c522cadc"
 metafile = true
