@@ -71,6 +71,11 @@ hash = "0a7b9b0b4da2593a122a078d751b9bda13f053e28ace26758ff87b81afd56da3"
 metafile = true
 
 [[files]]
+file = "mods/handcrafted.pw.toml"
+hash = "dcac9380c79679d79be4a760e12507a76f990b7c3828436794c2f9eaa26f61d5"
+metafile = true
+
+[[files]]
 file = "mods/immersiveportals.pw.toml"
 hash = "1b00a4302ee0958672cdf9278f4e735d15f14abf9ab4e9046317eb1affee446d"
 metafile = true
