@@ -31,18 +31,8 @@ hash = "7834481f76838453cdcc6c3a9eca9cd46e3199c0ff1788720d707507c8a03a75"
 metafile = true
 
 [[files]]
-file = "mods/culinaire.pw.toml"
-hash = "343d321dbdde6669583f2c79299697ed681a0d6a294c82d6a7922bdc4a832fe9"
-metafile = true
-
-[[files]]
 file = "mods/dashloader.pw.toml"
 hash = "eb15826e2cfc25210e3acd00b6998804b0dde55a433a881af75277172bdeb6f4"
-metafile = true
-
-[[files]]
-file = "mods/dawn.pw.toml"
-hash = "4a13d096e82525f8cd4eb0e8c14f43929d11d7d8b54d7d34a981f7ac29614699"
 metafile = true
 
 [[files]]
