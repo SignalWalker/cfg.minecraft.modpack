@@ -6,6 +6,11 @@ hash = "f30b15dc574856f6eca824f645537680ca12a6282bee89a33cbced66d6601dca"
 metafile = true
 
 [[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "a714c0d9b19e623a1ed9e130c446174a7eda24a7146afeb4e2d82498f8c8ea5c"
+metafile = true
+
+[[files]]
 file = "mods/beautify-refabricated.pw.toml"
 hash = "e1763d7c3db605b4824378db6e1149d8b48e3ee0d7b06ce467a217eb96ab1f45"
 metafile = true
@@ -13,6 +18,11 @@ metafile = true
 [[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "213cad77d46ff46fe20780b01856cb1a8812747e9c3564203669bf3905e646e2"
+metafile = true
+
+[[files]]
+file = "mods/cobblemon.pw.toml"
+hash = "e5db6ea381a4c139085fe63453a892472594ab140326bd9c2d20be4457c8dca0"
 metafile = true
 
 [[files]]
