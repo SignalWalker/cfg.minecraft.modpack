@@ -1,6 +1,11 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/balm.pw.toml"
+hash = "a69efb704b2ba8f1ec23809071f4902311db4ddf2c531358428e0803f2d8e26e"
+metafile = true
+
+[[files]]
 file = "mods/create-fabric.pw.toml"
 hash = "e5bbc96d6d5d6bffb8e36c89bbd1331d923e23fbb87be8bae208d206832adb1c"
 metafile = true
@@ -48,4 +53,9 @@ metafile = true
 [[files]]
 file = "mods/valkyrien-skies.pw.toml"
 hash = "615c4d880d5d5d34be5b88ecff4b0bf00f1df24b71edf26a98ed0c772b946b34"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "4eab0db38cceb1a4e00e6ebf3a46bcb47189a9b4ae3167c54af3e604b657207b"
 metafile = true
