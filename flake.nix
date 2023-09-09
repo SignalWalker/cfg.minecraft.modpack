@@ -25,7 +25,8 @@
       formatter = std.mapAttrs (system: pkgs: pkgs.default) inputs.alejandra.packages;
       packages =
         std.mapAttrs (system: pkgs: {
-          drifting-league = let
+          default = self.packages.${system}.driftingLeague;
+          driftingLeague = let
             index = fromTOML (readFile ./pack/index.toml);
             pack = fromTOML (readFile ./pack/pack.toml);
             toCurseUrl = toml: let
@@ -62,22 +63,20 @@
               pname = pack.name;
               version = pack.version;
               passthru = {
-                inherit mods;
+                inherit mods index pack;
               };
-              mods = attrValues mods;
               src = ./.;
               installPhase = let
-                installMods = std.concatStringsSep "\n" (map (mod: "cp ${mod} $out/${mod.passthru.filename}") (attrValues mods));
+                installMods = std.concatStringsSep "\n" (map (mod: "ln -sT ${mod} $out/${mod.passthru.filename}") (attrValues mods));
               in ''
-                          runHook preInstall
+                runHook preInstall
 
-                          mkdir $out
+                mkdir $out
                 ${installMods}
 
-                          runHook postInstall
+                runHook postInstall
               '';
             };
-          default = self.packages.${system}.drifting-league;
         })
         nixpkgsFor;
       devShells =
@@ -87,5 +86,6 @@
           };
         })
         nixpkgsFor;
+      nixosModules.default = (import ./nixosModule.nix) inputs (self.packages."x86_64-linux".driftingLeague.passthru.pack);
     };
 }
