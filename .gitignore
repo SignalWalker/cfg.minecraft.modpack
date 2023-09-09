@@ -1,2 +1,3 @@
 *.mrpack
-.stignore
+/result
+/result-*
