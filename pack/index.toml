@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "mods/create-fabric.pw.toml"
-hash = "e5bbc96d6d5d6bffb8e36c89bbd1331d923e23fbb87be8bae208d206832adb1c"
+hash = "a51f3f98721a8e637e71c78d5413271cb0d4816a5d55a8b9cd5c19353d49f8a2"
 metafile = true
 
 [[files]]
