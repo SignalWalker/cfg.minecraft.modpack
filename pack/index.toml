@@ -1,13 +1,38 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/adorn.pw.toml"
+hash = "cacfa864fbcef1fe67e225eec84733b86c130d2cc218c9a492c10e7f332a33f5"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "a69efb704b2ba8f1ec23809071f4902311db4ddf2c531358428e0803f2d8e26e"
 metafile = true
 
 [[files]]
+file = "mods/bookshelf-lib.pw.toml"
+hash = "6101baa55052ee4fd541dedb89ed0ddd9bd2e797743abba3a9d49c0c5ac8c532"
+metafile = true
+
+[[files]]
+file = "mods/cardinal-components-api.pw.toml"
+hash = "50e3b067e93d3e6683d540edc4d046ed7b6b5fbb31409df1727b120f225b1975"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "b6348f94ec939f563285dc96683e61da8fc17ab2f2897be2751fa24789513691"
+metafile = true
+
+[[files]]
 file = "mods/create-fabric.pw.toml"
 hash = "e5bbc96d6d5d6bffb8e36c89bbd1331d923e23fbb87be8bae208d206832adb1c"
+metafile = true
+
+[[files]]
+file = "mods/croptopia.pw.toml"
+hash = "8361392d5f517beb700ee5367c05c81448dba6d2becae59e37dd2720157d38c9"
 metafile = true
 
 [[files]]
@@ -21,8 +46,18 @@ hash = "8f7e28eb56a3f538cf2be43c03aea1c5b3017a5fe0429a6b67b052e0f6c0b5d4"
 metafile = true
 
 [[files]]
+file = "mods/fabric-language-kotlin.pw.toml"
+hash = "6f95b9e670d557f852a798489d7b5ec48ed8ddc7e8e1809ff06d4b187d17aac9"
+metafile = true
+
+[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "03e174cf691b52da20bd973b955fae6f3720d3d2120f9d6cc1de5fdf3180013c"
+metafile = true
+
+[[files]]
+file = "mods/handcrafted.pw.toml"
+hash = "9db7f06dd55021ec4a9d3c104ff694184088f940db16ec39e6eb27d167203033"
 metafile = true
 
 [[files]]
@@ -41,6 +76,26 @@ hash = "c239c951796882b9c93e649a0dba4f2d95804441faaed707b686381b7a5c67da"
 metafile = true
 
 [[files]]
+file = "mods/macaws-lights-and-lamps.pw.toml"
+hash = "a04b07592ea5236f1dbc64a1bd4ea86c0751f44c4f1d760a192135d09939e292"
+metafile = true
+
+[[files]]
+file = "mods/moonlight.pw.toml"
+hash = "167d70254b24c3127520ab09244ce21d6132bc8164091e6387b6d078b8416411"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-lib.pw.toml"
+hash = "c89835f045a03832c287470cd1729a70f1265e3eac7b3cdaf603c3c1fd677689"
+metafile = true
+
+[[files]]
+file = "mods/runelic.pw.toml"
+hash = "03462e595bdf44957bbaf004c0b275a11d19128df3519b52880ce9179e0f3727"
+metafile = true
+
+[[files]]
 file = "mods/sodium.pw.toml"
 hash = "bff35d4d3b4fa8c82b5890555d8d9123c223787c545ba7c000c0208b68a72a6d"
 metafile = true
@@ -48,6 +103,16 @@ metafile = true
 [[files]]
 file = "mods/starlight.pw.toml"
 hash = "218f67d6bcaae849582618cd3e5eb1d4cac0fd6045115f64340620300e160c11"
+metafile = true
+
+[[files]]
+file = "mods/supplementaries.pw.toml"
+hash = "249feb70bab5b9f12d695f3b71bdc8829b8879874fdfd94d342f9ac3998421b1"
+metafile = true
+
+[[files]]
+file = "mods/travelersbackpack.pw.toml"
+hash = "a43535d26ddabd919052845f7c6a4f67aece1c54dbeb62d4645cd36ec62f877b"
 metafile = true
 
 [[files]]
