@@ -29,11 +29,27 @@ in {
           };
       in {
         state = mkDir "/var/lib";
+        configuration = mkDir "/etc";
+      };
+      environmentFile = mkOption {
+        type = types.str;
+        readOnly = true;
+        default = "${league.dir.configuration}/env.conf";
       };
       java = {
         package = mkOption {
           type = types.package;
           default = pkgs.temurin-bin;
+        };
+        memory = {
+          initial = mkOption {
+            type = types.str;
+            default = "1024M";
+          };
+          max = mkOption {
+            type = types.str;
+            default = "4096M";
+          };
         };
       };
       quilt = {
@@ -59,6 +75,22 @@ in {
         type = types.package;
         default = self.packages.${pkgs.system}.driftingLeague;
       };
+      rcon = {
+        package = mkOption {
+          type = types.package;
+          default = pkgs.mcrcon;
+        };
+        port = mkOption {
+          type = types.port;
+          default = 25575;
+        };
+        openFirewall = mkEnableOption "rcon firewall";
+      };
+      port = mkOption {
+        type = types.port;
+        default = 25565;
+      };
+      openFirewall = mkEnableOption "minecraft firewall";
     };
   };
   disabledModules = [];
@@ -73,6 +105,8 @@ in {
 
     systemd.tmpfiles.rules = [
       "L+ ${league.dir.state}/mods - - - - ${league.mods}"
+      "f ${league.environmentFile} 0640 ${league.user} ${league.group}"
+      "z ${league.environmentFile} 0640 ${league.user} ${league.group}"
     ];
 
     systemd.services."drifting-league-setup" = {
@@ -98,12 +132,25 @@ in {
       wantedBy = ["multi-user.target"];
       path = [league.java.package];
       serviceConfig = {
-        StateDirectory = league.user;
-        WorkingDirectory = league.dir.state;
-        Type = "forking";
-        ExecStart = "${league.java.package}/bin/java -jar ${league.dir.state}/quilt-server-launch.jar nogui";
+        EnvironmentFile = league.environmentFile;
+
+        Type = "simple";
+        ExecStart = "${league.java.package}/bin/java -Xms${league.java.memory.initial} -Xmx${league.java.memory.max} -jar ${league.dir.state}/quilt-server-launch.jar nogui";
+        ExecStop = "${league.rcon.package}/bin/mcrcon -H localhost -P ${toString league.rcon.port} -p \"$MINECRAFT_RCON_PASSWORD\" stop";
+        SuccessExitStatus = [0 1];
         User = league.user;
         Group = league.group;
+
+        StateDirectory = league.user;
+        ConfigurationDirectory = league.user;
+        WorkingDirectory = league.dir.state;
+
+        ProtectHome = true;
+        ProtectSystem = "strict";
+        PrivateDevices = true;
+        NoNewPrivileges = true;
+        PrivateTmp = true;
+        ReadWritePaths = league.dir.state;
       };
     };
   };
