@@ -111,6 +111,11 @@ hash = "249feb70bab5b9f12d695f3b71bdc8829b8879874fdfd94d342f9ac3998421b1"
 metafile = true
 
 [[files]]
+file = "mods/terra.pw.toml"
+hash = "4ae162dbd3ee7638f698769336299e10baa7ff1f2b22c716d8dd40528ef14cce"
+metafile = true
+
+[[files]]
 file = "mods/travelersbackpack.pw.toml"
 hash = "a43535d26ddabd919052845f7c6a4f67aece1c54dbeb62d4645cd36ec62f877b"
 metafile = true
