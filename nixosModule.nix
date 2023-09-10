@@ -84,7 +84,6 @@ in {
           type = types.port;
           default = 25575;
         };
-        openFirewall = mkEnableOption "rcon firewall";
       };
       port = mkOption {
         type = types.port;
@@ -108,6 +107,11 @@ in {
       "f ${league.environmentFile} 0640 ${league.user} ${league.group}"
       "z ${league.environmentFile} 0640 ${league.user} ${league.group}"
     ];
+
+    networking.firewall = lib.mkIf league.openFirewall {
+      allowedTCPPorts = [league.port];
+      allowedUDPPorts = [league.port];
+    };
 
     systemd.services."drifting-league-setup" = {
       after = ["network-online.target"];
