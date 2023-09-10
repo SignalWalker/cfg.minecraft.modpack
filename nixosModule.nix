@@ -100,7 +100,7 @@ in {
       serviceConfig = {
         StateDirectory = league.user;
         WorkingDirectory = league.dir.state;
-        Type = "simple";
+        Type = "forking";
         ExecStart = "${league.java.package}/bin/java -jar ${league.dir.state}/quilt-server-launch.jar nogui";
         User = league.user;
         Group = league.group;
