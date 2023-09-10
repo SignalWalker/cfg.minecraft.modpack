@@ -41,7 +41,7 @@ in {
           type = types.package;
           default = pkgs.fetchurl {
             url = "https://maven.quiltmc.org/repository/release/org/quiltmc/quilt-installer/0.8.2/quilt-installer-0.8.2.jar";
-            hash = lib.fakeHash;
+            hash = "sha256-fL1QnCcomJodOAay3Z1AvdgORpl7CuYbrXIz0i2k8Ao=";
           };
         };
         version = mkOption {
@@ -70,6 +70,10 @@ in {
       group = league.group;
     };
     users.groups.${league.group} = {};
+
+    systemd.tmpfiles.rules = [
+      "L+ ${league.dir.state}/mods - - - - ${league.mods}"
+    ];
 
     systemd.services."drifting-league-setup" = {
       after = ["network-online.target"];
