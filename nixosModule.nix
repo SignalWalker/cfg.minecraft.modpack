@@ -90,6 +90,12 @@ in {
         default = 25565;
       };
       openFirewall = mkEnableOption "minecraft firewall";
+      packwiz = {
+        hostName = mkOption {
+          type = types.nullOr types.str;
+          default = null;
+        };
+      };
     };
   };
   disabledModules = [];
@@ -155,6 +161,11 @@ in {
         NoNewPrivileges = true;
         PrivateTmp = true;
         ReadWritePaths = league.dir.state;
+      };
+    };
+    services.nginx.virtualHosts = lib.mkIf (league.packwiz.hostName != null) {
+      ${league.packwiz.hostName} = {
+        root = league.mods.passthru.packwizRoot;
       };
     };
   };

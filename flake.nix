@@ -64,6 +64,7 @@
               version = pack.version;
               passthru = {
                 inherit mods index pack;
+                packwizRoot = ./pack;
               };
               src = ./.;
               installPhase = let
