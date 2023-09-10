@@ -51,6 +51,11 @@ hash = "8d67d2a51ee0f6f0160915e6d306ff5c2b986d0d0cdf3c3c44c2ce9f5ad1fa66"
 metafile = true
 
 [[files]]
+file = "mods/emi.pw.toml"
+hash = "8cf21d0442fb1c94cb87ec69b206d548f3516f4177b2a30b6471ff27048aed3c"
+metafile = true
+
+[[files]]
 file = "mods/eureka.pw.toml"
 hash = "4948614479a784c815feb0eb7781512310e81ff9c197afdce8ca4191dcebe796"
 metafile = true
@@ -103,11 +108,6 @@ metafile = true
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "5c137fb29f23063fe98c0bd68726f5a745f875bf0bdb09e1b3ee649565843503"
-metafile = true
-
-[[files]]
-file = "mods/rei.pw.toml"
-hash = "bdfe29f973a7da40a8b43d8defb49ab9ea69ae928b510f048e78d3a4864d0772"
 metafile = true
 
 [[files]]
