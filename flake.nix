@@ -65,8 +65,18 @@
               passthru = {
                 inherit mods index pack;
                 packwizRoot = ./pack;
+                prism = pkgs.stdenvNoCC.mkDerivation {
+                  name = "${pack.name}.zip";
+                  src = ./prism;
+                  packwiz_bootstrap = pkgs.fetchurl {
+                    url = "https://github.com/packwiz/packwiz-installer-bootstrap/releases/download/v0.0.3/packwiz-installer-bootstrap.jar";
+                    hash = "sha256-qPuyTcYEJ46X9GiOgtPZGjGLmO/AjV2/y8vKtkQ9EWw=";
+                  };
+                  builder = ./build-pack.sh;
+                  nativeBuildInputs = with pkgs; [zip];
+                };
               };
-              src = ./.;
+              src = ./pack;
               installPhase = let
                 installMods = std.concatStringsSep "\n" (map (mod: "ln -sT ${mod} $out/${mod.passthru.filename}") (attrValues mods));
               in ''

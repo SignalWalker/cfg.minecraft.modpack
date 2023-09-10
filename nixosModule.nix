@@ -75,6 +75,16 @@ in {
         type = types.package;
         default = self.packages.${pkgs.system}.driftingLeague;
       };
+      prism = {
+        name = mkOption {
+          type = types.str;
+          default = "prism";
+        };
+        instance = mkOption {
+          type = types.package;
+          default = league.mods.passthru.prism;
+        };
+      };
       rcon = {
         package = mkOption {
           type = types.package;
@@ -166,6 +176,7 @@ in {
     services.nginx.virtualHosts = lib.mkIf (league.packwiz.hostName != null) {
       ${league.packwiz.hostName} = {
         root = league.mods.passthru.packwizRoot;
+        locations."=/${league.prism.name}.zip".alias = league.prism.instance;
       };
     };
   };
