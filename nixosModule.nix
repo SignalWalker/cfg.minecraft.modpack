@@ -101,7 +101,7 @@ in {
         StateDirectory = league.user;
         WorkingDirectory = league.dir.state;
         Type = "simple";
-        ExecStart = "java -jar ${league.dir.state}/quilt-server-launch.jar nogui";
+        ExecStart = "${league.java.package}/bin/java -jar ${league.dir.state}/quilt-server-launch.jar nogui";
         User = league.user;
         Group = league.group;
       };
