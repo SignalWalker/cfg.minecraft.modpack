@@ -82,7 +82,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "167d70254b24c3127520ab09244ce21d6132bc8164091e6387b6d078b8416411"
+hash = "a2f07afa78bc8951488f1655fbe96be9ab70a298d58402ed057baaefb0b563f3"
 metafile = true
 
 [[files]]
