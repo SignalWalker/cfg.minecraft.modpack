@@ -52,12 +52,16 @@
                 outputHash = toml.download.hash;
                 passthru = toml;
               };
-            mods = listToAttrs (map (file: let
+            mods = foldl' (acc: file: let
               toml = fromTOML (readFile file);
-            in {
-              name = toml.name;
-              value = fetchMod toml;
-            }) (std.filesystem.listFilesRecursive ./pack/mods));
+            in
+              if toml.side == "client"
+              then acc
+              else
+                acc
+                // {
+                  ${toml.name} = fetchMod toml;
+                }) {} (std.filesystem.listFilesRecursive ./pack/mods);
           in
             pkgs.stdenvNoCC.mkDerivation {
               pname = pack.name;

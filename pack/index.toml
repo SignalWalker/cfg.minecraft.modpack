@@ -6,6 +6,16 @@ hash = "cacfa864fbcef1fe67e225eec84733b86c130d2cc218c9a492c10e7f332a33f5"
 metafile = true
 
 [[files]]
+file = "mods/appleskin.pw.toml"
+hash = "9155b589db4d07c17d07523a84ccfdbd9abb532ef71bd1594125ccf0e5015311"
+metafile = true
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "a243675bc757485925b293932ee289b9fbcfb3b75bd3ba74eca7603f191cedad"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "a69efb704b2ba8f1ec23809071f4902311db4ddf2c531358428e0803f2d8e26e"
 metafile = true
@@ -83,6 +93,16 @@ metafile = true
 [[files]]
 file = "mods/moonlight.pw.toml"
 hash = "a2f07afa78bc8951488f1655fbe96be9ab70a298d58402ed057baaefb0b563f3"
+metafile = true
+
+[[files]]
+file = "mods/mouse-tweaks.pw.toml"
+hash = "5c137fb29f23063fe98c0bd68726f5a745f875bf0bdb09e1b3ee649565843503"
+metafile = true
+
+[[files]]
+file = "mods/rei.pw.toml"
+hash = "bdfe29f973a7da40a8b43d8defb49ab9ea69ae928b510f048e78d3a4864d0772"
 metafile = true
 
 [[files]]
