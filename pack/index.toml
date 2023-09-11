@@ -56,6 +56,11 @@ hash = "8d67d2a51ee0f6f0160915e6d306ff5c2b986d0d0cdf3c3c44c2ce9f5ad1fa66"
 metafile = true
 
 [[files]]
+file = "mods/do-a-barrel-roll.pw.toml"
+hash = "6d1da3d0233a5e687692c9227567036dfa4e2327972d580eff995238da5e331d"
+metafile = true
+
+[[files]]
 file = "mods/ebe.pw.toml"
 hash = "8cfad648c3f907a6611d738ff296dc7ef60fe6d71dc8817f8f066038da4fef45"
 metafile = true
