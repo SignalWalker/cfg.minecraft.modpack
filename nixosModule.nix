@@ -151,6 +151,7 @@ in {
       requires = ["drifting-league-setup.service"];
       wantedBy = ["multi-user.target"];
       path = [league.java.package];
+      restartTriggers = [league.mods];
       serviceConfig = {
         EnvironmentFile = league.environmentFile;
 
