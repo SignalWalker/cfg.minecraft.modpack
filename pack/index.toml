@@ -56,6 +56,11 @@ hash = "8cf21d0442fb1c94cb87ec69b206d548f3516f4177b2a30b6471ff27048aed3c"
 metafile = true
 
 [[files]]
+file = "mods/estrogen.pw.toml"
+hash = "d8274b570bb4389ff5dc39552d24e98d5f72e0dcdf50018958b5d3ae8e75285a"
+metafile = true
+
+[[files]]
 file = "mods/eureka.pw.toml"
 hash = "4948614479a784c815feb0eb7781512310e81ff9c197afdce8ca4191dcebe796"
 metafile = true
@@ -158,4 +163,14 @@ metafile = true
 [[files]]
 file = "mods/waystones.pw.toml"
 hash = "4eab0db38cceb1a4e00e6ebf3a46bcb47189a9b4ae3167c54af3e604b657207b"
+metafile = true
+
+[[files]]
+file = "mods/yacl.pw.toml"
+hash = "5128dafec4140a625b5c388f56e9989b8f6780dcce41134ef799bd9be3d5ae1a"
+metafile = true
+
+[[files]]
+file = "mods/zoomify.pw.toml"
+hash = "ec7f94fcb88b139515557631074b5e90e64ea53761eb5753c2492007e24f59c4"
 metafile = true
