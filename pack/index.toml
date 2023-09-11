@@ -141,6 +141,11 @@ hash = "5c137fb29f23063fe98c0bd68726f5a745f875bf0bdb09e1b3ee649565843503"
 metafile = true
 
 [[files]]
+file = "mods/reeses-sodium-options.pw.toml"
+hash = "d1deceaba2c7373870733d0b3c92ca01051f42f60d868ab0e49ec0d8f76f09e4"
+metafile = true
+
+[[files]]
 file = "mods/resourceful-lib.pw.toml"
 hash = "c89835f045a03832c287470cd1729a70f1265e3eac7b3cdaf603c3c1fd677689"
 metafile = true
@@ -152,7 +157,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "28886fd5471a7a5cc215f155991e1628aaa86224da1cf46e1c2d12cef88118f4"
+hash = "35d3699e222615f7a68cf3796d611af4048d16234a87b5c4589872d1b1988dfb"
 metafile = true
 
 [[files]]
