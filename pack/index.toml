@@ -51,6 +51,11 @@ hash = "8d67d2a51ee0f6f0160915e6d306ff5c2b986d0d0cdf3c3c44c2ce9f5ad1fa66"
 metafile = true
 
 [[files]]
+file = "mods/ebe.pw.toml"
+hash = "8cfad648c3f907a6611d738ff296dc7ef60fe6d71dc8817f8f066038da4fef45"
+metafile = true
+
+[[files]]
 file = "mods/emi.pw.toml"
 hash = "8cf21d0442fb1c94cb87ec69b206d548f3516f4177b2a30b6471ff27048aed3c"
 metafile = true
@@ -98,6 +103,11 @@ metafile = true
 [[files]]
 file = "mods/krypton.pw.toml"
 hash = "71ef7cc16632c0039fe194183b5885968c6d740aaa67a58000653ae0cb40b882"
+metafile = true
+
+[[files]]
+file = "mods/lambdynamiclights.pw.toml"
+hash = "6cd80356b3fdf4e61742356329c852ace4fda3a52277df25f3281e52e8bf89b7"
 metafile = true
 
 [[files]]
