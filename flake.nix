@@ -33,7 +33,7 @@
               fileNum = toString toml.update.curseforge.file-id;
               fileNs = substring 0 4 fileNum;
               fileId = std.strings.removePrefix "0" (substring 4 3 fileNum);
-            in "https://mediafilez.forgecdn.net/files/${fileNs}/${fileId}/${toml.filename}";
+            in "https://mediafilez.forgecdn.net/files/${fileNs}/${fileId}/${std.strings.escapeURL toml.filename}";
             fetchCurseforge = toml: let
               fileId = std.strings.splitString "0" (toString toml.update.curseforge.file-id);
             in {
