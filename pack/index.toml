@@ -222,7 +222,7 @@ metafile = true
 
 [[files]]
 file = "mods/waystones.pw.toml"
-hash = "4eab0db38cceb1a4e00e6ebf3a46bcb47189a9b4ae3167c54af3e604b657207b"
+hash = "c9a63c67893610e550c893c89ac485b4b0778ad1783f0e8705a63b458f57e96f"
 metafile = true
 
 [[files]]
