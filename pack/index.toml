@@ -156,6 +156,11 @@ hash = "5c137fb29f23063fe98c0bd68726f5a745f875bf0bdb09e1b3ee649565843503"
 metafile = true
 
 [[files]]
+file = "mods/plasmo-voice.pw.toml"
+hash = "c16568183b0cd6ea1fa716465727f30dc34fa98b4afc5c289827d105ff25032c"
+metafile = true
+
+[[files]]
 file = "mods/reeses-sodium-options.pw.toml"
 hash = "4474d7e2520929109bcec12af9e2b6da205e090e14f91c8042c53fc6ce490078"
 metafile = true
