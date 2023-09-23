@@ -62,7 +62,7 @@ metafile = true
 
 [[files]]
 file = "mods/do-a-barrel-roll.pw.toml"
-hash = "6d1da3d0233a5e687692c9227567036dfa4e2327972d580eff995238da5e331d"
+hash = "0131aa811fa3a38fec79b012b5de97c4e55f456f91d0f6056a766d6e5cceba69"
 metafile = true
 
 [[files]]
@@ -102,7 +102,7 @@ metafile = true
 
 [[files]]
 file = "mods/fastback.pw.toml"
-hash = "5639d26da6fe72fe611d5ff39214544ca308855c760ae383d29c57aa8e22866d"
+hash = "ccffb0cc8ebbed38e43c980d083b6ff940ff7c43a7fc40af4d0dd15827d78f30"
 metafile = true
 
 [[files]]
@@ -127,7 +127,7 @@ metafile = true
 
 [[files]]
 file = "mods/journeymap.pw.toml"
-hash = "c8bda153da9154077cea63fd17bfcf39fee5792af0ae91c115ec437ad0f666f5"
+hash = "c4b61d08a5bed2259cd941b520fda6df278973967d768f1a4be37f936c02278a"
 metafile = true
 
 [[files]]
