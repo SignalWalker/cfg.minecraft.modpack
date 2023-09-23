@@ -56,6 +56,11 @@ hash = "8361392d5f517beb700ee5367c05c81448dba6d2becae59e37dd2720157d38c9"
 metafile = true
 
 [[files]]
+file = "mods/dashloader.pw.toml"
+hash = "9358ab63f8b4a0bec2647e3e74bc8c9ab33f51bf250a39ad75906177a770a98b"
+metafile = true
+
+[[files]]
 file = "mods/dcintegration.pw.toml"
 hash = "8d67d2a51ee0f6f0160915e6d306ff5c2b986d0d0cdf3c3c44c2ce9f5ad1fa66"
 metafile = true
@@ -111,6 +116,11 @@ hash = "9db7f06dd55021ec4a9d3c104ff694184088f940db16ec39e6eb27d167203033"
 metafile = true
 
 [[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "ca885ba80a295fe9729c9ef27e366911d8ec2467bcced404f08593ead37176b0"
+metafile = true
+
+[[files]]
 file = "mods/indium.pw.toml"
 hash = "85daf558c36022a664c9e2bc3d9a9bc21cb9fa62977890f142c20ccc155eae36"
 metafile = true
@@ -143,6 +153,11 @@ metafile = true
 [[files]]
 file = "mods/macaws-lights-and-lamps.pw.toml"
 hash = "a04b07592ea5236f1dbc64a1bd4ea86c0751f44c4f1d760a192135d09939e292"
+metafile = true
+
+[[files]]
+file = "mods/memoryleakfix.pw.toml"
+hash = "8e42842f48b3227733bafced612212eee2298f567ca599ac6a55b9878ae661da"
 metafile = true
 
 [[files]]
