@@ -39,7 +39,7 @@ in {
       java = {
         package = mkOption {
           type = types.package;
-          default = pkgs.temurin-bin;
+          default = pkgs.temurin-bin-17;
         };
         memory = {
           initial = mkOption {
