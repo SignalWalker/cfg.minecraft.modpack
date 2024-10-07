@@ -56,8 +56,8 @@ in {
         installer = mkOption {
           type = types.package;
           default = pkgs.fetchurl {
-            url = "https://maven.quiltmc.org/repository/release/org/quiltmc/quilt-installer/0.8.2/quilt-installer-0.8.2.jar";
-            hash = "sha256-fL1QnCcomJodOAay3Z1AvdgORpl7CuYbrXIz0i2k8Ao=";
+            url = "https://maven.quiltmc.org/repository/release/org/quiltmc/quilt-installer/0.9.2/quilt-installer-0.9.2.jar";
+            hash = "sha256-w60+I+7oYOUYXFlOfLKA5Pq+fnZqg5RTgdmpnGSFXFs=";
           };
         };
         version = mkOption {
@@ -80,9 +80,24 @@ in {
           type = types.str;
           default = "prism";
         };
+        mmcPack = mkOption {
+          type = types.submoduleWith {modules = [(import ./mmcPack.nix pkgs)];};
+        };
         instance = mkOption {
           type = types.package;
-          default = league.mods.passthru.prism;
+          default = pkgs.stdenvNoCC.mkDerivation {
+            name = "${pack.name}.zip";
+            src = ./prism;
+            packwiz_bootstrap = pkgs.fetchurl {
+              url = "https://github.com/packwiz/packwiz-installer-bootstrap/releases/download/v0.0.3/packwiz-installer-bootstrap.jar";
+              hash = "sha256-qPuyTcYEJ46X9GiOgtPZGjGLmO/AjV2/y8vKtkQ9EWw=";
+            };
+            env = {
+              MMC_PACK_JSON = league.prism.mmcPack.outputFile;
+            };
+            builder = ./build-pack.sh;
+            nativeBuildInputs = with pkgs; [zip];
+          };
         };
       };
       rcon = {
@@ -111,6 +126,14 @@ in {
   disabledModules = [];
   imports = [];
   config = lib.mkIf league.enable {
+    services.minecraft.driftingLeague = {
+      prism.mmcPack.components = {
+        "LWJGL 3".version = "3.3.3";
+        "Minecraft".version = league.minecraft.version;
+        "Quilt Loader".version = league.quilt.version;
+      };
+    };
+
     users.users.${league.user} = {
       isSystemUser = true;
       home = league.dir.state;

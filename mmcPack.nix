@@ -1,6 +1,5 @@
-{
+pkgs: {
   config,
-  pkgs,
   lib,
   ...
 }:
@@ -104,6 +103,7 @@ in {
             "version" = quilt.version;
           }
         ];
+        "formatVersion" = 1;
       };
     };
   };
@@ -118,5 +118,4 @@ in {
       "Quilt Loader".uid = "org.quiltmc.quilt-loader";
     };
   };
-  meta = {};
 }
