@@ -128,7 +128,7 @@ in {
   config = lib.mkIf league.enable {
     services.minecraft.driftingLeague = {
       prism.mmcPack.components = {
-        "LWJGL 3".version = "3.3.3";
+        "LWJGL 3".version = "3.3.1";
         "Minecraft".version = league.minecraft.version;
         "Quilt Loader".version = league.quilt.version;
       };
