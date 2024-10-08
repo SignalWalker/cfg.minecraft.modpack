@@ -266,11 +266,6 @@ hash = "f9d57c066b44e446e07b6f0d47f568def4a82d68a42e72bc86edd696332ac90d"
 metafile = true
 
 [[files]]
-file = "mods/sleep.pw.toml"
-hash = "da3d82d5b2ac490b66ae1cbe9b72272a47025bd3cf82e55cc5681381dff61a51"
-metafile = true
-
-[[files]]
 file = "mods/sodium.pw.toml"
 hash = "245530bdbb5c4127a1286f3722778d71e478194a8dcee89388c8fd247b4a57da"
 metafile = true
