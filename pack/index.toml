@@ -41,6 +41,11 @@ hash = "b2d6595b73bd66167a4d7ace472c54c0eab45f55e1769f4ff7da72ce8b58872a"
 metafile = true
 
 [[files]]
+file = "mods/comforts.pw.toml"
+hash = "fd4ec85a4e02683018d27282001b7c3204b0e43a2a11b307b74ce3468abc561a"
+metafile = true
+
+[[files]]
 file = "mods/create-fabric.pw.toml"
 hash = "26394151533372bce2229f31c8df7f65e2deb751cc823f317cd30682381acc8f"
 metafile = true
@@ -53,6 +58,11 @@ metafile = true
 [[files]]
 file = "mods/do-a-barrel-roll.pw.toml"
 hash = "5eddd4c6a5cba7cd4d3d9a0acd0e810ae040d92b6c1928984a9497a5187d143b"
+metafile = true
+
+[[files]]
+file = "mods/dynamicsurroundingsfabric.pw.toml"
+hash = "fe2c08e00f407db274ced454f7eadcbcb0f04f094ac5d8543aafa050184f85b2"
 metafile = true
 
 [[files]]
@@ -71,6 +81,11 @@ hash = "b9776960dcc40b4688a1ef1129932694cc8a5b7248c057284022446ac19101cf"
 metafile = true
 
 [[files]]
+file = "mods/exposure.pw.toml"
+hash = "a3124745545f667a1949522edc955fd3c0b6f62c321be7cfad45e5962c5cc98e"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight-refabricated.pw.toml"
 hash = "d7f5c29f51b6e866f2227936ca124123ef5794813b791faf04d9fa66723bf2ff"
 metafile = true
@@ -81,8 +96,18 @@ hash = "39a6a39433b1b104bfafafcd60a8171f866daa2ebefffd64df822d0e69288e3a"
 metafile = true
 
 [[files]]
+file = "mods/forge-config-api-port.pw.toml"
+hash = "129bb8b135edc60038f021b693f5b88a0067b722f326e0d6067112243774289b"
+metafile = true
+
+[[files]]
 file = "mods/geckolib.pw.toml"
 hash = "bd0c76f438f67e2611fa8458ab153be304acfb4aaed4acebd0dcdfbbb74f1388"
+metafile = true
+
+[[files]]
+file = "mods/grappling-hook-mod-fabric.pw.toml"
+hash = "985facad5abe2519902bc588347cc18cc009f24e58764a4ae8da0beaa4ce10f8"
 metafile = true
 
 [[files]]
@@ -116,6 +141,16 @@ hash = "a4ead715d6d053581edbbecac7d8cdae57d941503d0ccec8aca5ef26ba3b1341"
 metafile = true
 
 [[files]]
+file = "mods/item-placer.pw.toml"
+hash = "f276d3fe5dd23feb39d6db9cd84aaa74a2def37deb268e5f41f8c652363f7a59"
+metafile = true
+
+[[files]]
+file = "mods/lambdynamiclights.pw.toml"
+hash = "a626674fc1092afe5ccc6cbf4856c09119e42395494f1c3862eed2ab17da0221"
+metafile = true
+
+[[files]]
 file = "mods/lithium.pw.toml"
 hash = "c239c951796882b9c93e649a0dba4f2d95804441faaed707b686381b7a5c67da"
 metafile = true
@@ -133,6 +168,11 @@ metafile = true
 [[files]]
 file = "mods/mru.pw.toml"
 hash = "f6d610af64557560917daeeb899d51ae33132b81eb11106f1b8fa18c6ba38e51"
+metafile = true
+
+[[files]]
+file = "mods/niftycarts.pw.toml"
+hash = "36fba9bc04d87b14d7b4201cc3958f5e8aa5873b23c3c3564f8ce437e11dc1b7"
 metafile = true
 
 [[files]]
@@ -158,6 +198,11 @@ metafile = true
 [[files]]
 file = "mods/rolling-down-in-the-deep.pw.toml"
 hash = "f9d57c066b44e446e07b6f0d47f568def4a82d68a42e72bc86edd696332ac90d"
+metafile = true
+
+[[files]]
+file = "mods/sleep.pw.toml"
+hash = "da3d82d5b2ac490b66ae1cbe9b72272a47025bd3cf82e55cc5681381dff61a51"
 metafile = true
 
 [[files]]
@@ -198,6 +243,11 @@ metafile = true
 [[files]]
 file = "mods/trinkets.pw.toml"
 hash = "07619668821f2aad9dbd40084ad80f25595d8715a9ef204a4a9629225729a7d9"
+metafile = true
+
+[[files]]
+file = "mods/universal-graves.pw.toml"
+hash = "7c7afe7a0bcc7b5d40a8cab53911d2670ad0e3c083fcdfbe6df9095c7331ae4b"
 metafile = true
 
 [[files]]
