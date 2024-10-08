@@ -1,6 +1,16 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/ambientsounds.pw.toml"
+hash = "f9eed1d0570abf0533bb3eb44d81e6952e1f30392ef63028c7b8fffb679f872c"
+metafile = true
+
+[[files]]
+file = "mods/another-furniture.pw.toml"
+hash = "525c8448074c4402b411c2b904eff4dae542834c649d13dc00475bd2546fe286"
+metafile = true
+
+[[files]]
 file = "mods/antique-atlas-4.pw.toml"
 hash = "83f1f089a96f0d89743702337cf8064ec676e7e4b9c19019530418785a0711d1"
 metafile = true
@@ -18,6 +28,26 @@ metafile = true
 [[files]]
 file = "mods/balm.pw.toml"
 hash = "d8c757f4a1f9d3abef4a3b25a889af423003a9b8af300d6e3e243f3f53f4d152"
+metafile = true
+
+[[files]]
+file = "mods/bclib.pw.toml"
+hash = "d71225c33f2287ca8c0f61483a8d9da35c80a69cb14f252dceaf0e504435bb7f"
+metafile = true
+
+[[files]]
+file = "mods/better-combat.pw.toml"
+hash = "0998161f34280a8e4c4d7858bfc5879c111794003ed4c29e5a90eb19e08a579a"
+metafile = true
+
+[[files]]
+file = "mods/betterend.pw.toml"
+hash = "bd5f853537d50e0b156f5a5cb4ca557771aa0828ccf46b22b31a3aa549d615ed"
+metafile = true
+
+[[files]]
+file = "mods/betternether.pw.toml"
+hash = "d1a9663f1984c580facd4f217dc45ef1df0030776c0c773e03b573469405e052"
 metafile = true
 
 [[files]]
@@ -41,13 +71,33 @@ hash = "b2d6595b73bd66167a4d7ace472c54c0eab45f55e1769f4ff7da72ce8b58872a"
 metafile = true
 
 [[files]]
+file = "mods/collective.pw.toml"
+hash = "9877a4268206623fd1059d4d2a5735385a7d69ac400e0446f8d29f039a66e6d7"
+metafile = true
+
+[[files]]
 file = "mods/comforts.pw.toml"
 hash = "fd4ec85a4e02683018d27282001b7c3204b0e43a2a11b307b74ce3468abc561a"
 metafile = true
 
 [[files]]
+file = "mods/convenient-decor.pw.toml"
+hash = "027fe9726e0173c3ffe2f2bf05fedc96d82a122a8e0fd0260549789dd84a6064"
+metafile = true
+
+[[files]]
+file = "mods/coroutil.pw.toml"
+hash = "809ab9c953bf5ca4647570fafbc76bc7f29ada644f9556831c196e26b1822ca3"
+metafile = true
+
+[[files]]
 file = "mods/create-fabric.pw.toml"
 hash = "26394151533372bce2229f31c8df7f65e2deb751cc823f317cd30682381acc8f"
+metafile = true
+
+[[files]]
+file = "mods/creativecore.pw.toml"
+hash = "e25ec1970cab2778a7bb1685bef789d86a12d839cce7a8c40a55f3f24be995ce"
 metafile = true
 
 [[files]]
@@ -126,11 +176,6 @@ hash = "e75088412c3ee1db182bc0124fae4bbf668653706ff70cee003b570be57b0d6d"
 metafile = true
 
 [[files]]
-file = "mods/incendium.pw.toml"
-hash = "45cbe5240c7d30d141494ff4cf3683aedfa99e3d12e55e007b6368bd258f7620"
-metafile = true
-
-[[files]]
 file = "mods/indium.pw.toml"
 hash = "31278d67704a56eb32d93c240e4bfd9822e1ab6047ee14d752953dd0c24dca95"
 metafile = true
@@ -181,6 +226,21 @@ hash = "13a6776b6e17d32a8dcc74932ce4af8b13290b1c90fe4c91b41abbd2b2c0d569"
 metafile = true
 
 [[files]]
+file = "mods/passive-shield.pw.toml"
+hash = "69f6d7d32809732a8173f67df3b6201b72691e06cd6ffb9732f3b42afed42a20"
+metafile = true
+
+[[files]]
+file = "mods/playeranimator.pw.toml"
+hash = "a3d67082a95f70155d68aec25d7ffba8a7c7bc48b342529e52005ddfc76f11ae"
+metafile = true
+
+[[files]]
+file = "mods/presence-footsteps.pw.toml"
+hash = "35f2b7d27291e3a313c986137b70b7675bc32b3d0097e0940c7e23b0cf62b92e"
+metafile = true
+
+[[files]]
 file = "mods/qkl.pw.toml"
 hash = "47217cc1489533f668d622f2078351a61873be573311a9a94be7293328a849a7"
 metafile = true
@@ -211,11 +271,6 @@ hash = "245530bdbb5c4127a1286f3722778d71e478194a8dcee89388c8fd247b4a57da"
 metafile = true
 
 [[files]]
-file = "mods/sound.pw.toml"
-hash = "57a1d1fc1098912a65b7ed7b823d128c1e6bd7de0c0380f4c128788f0d6a9258"
-metafile = true
-
-[[files]]
 file = "mods/spice-of-life-valheim-edition.pw.toml"
 hash = "eaabf6cf6ff0575ebb642190f99f9e3951333eec07b12bf9261d288fb1720a43"
 metafile = true
@@ -223,6 +278,11 @@ metafile = true
 [[files]]
 file = "mods/structory.pw.toml"
 hash = "0452ea33020c62f7ec06b88cfd5dd9f33d8923d68ecd1512132730e388eb4bf5"
+metafile = true
+
+[[files]]
+file = "mods/supplementaries.pw.toml"
+hash = "97acb27ee8b31a8877f74d9376a5e2d6c81b54a3359c85e9d3cb545050b98481"
 metafile = true
 
 [[files]]
@@ -256,6 +316,16 @@ hash = "acc29f4d30641c8138744b8c15cad479e17c601567de64b19ddb82aff37b3ad1"
 metafile = true
 
 [[files]]
+file = "mods/wakes.pw.toml"
+hash = "2c27fa315f6a06c0c56b12151417d5b3c2f6f1a551b881ffa3a54f010c63956c"
+metafile = true
+
+[[files]]
 file = "mods/waystones.pw.toml"
 hash = "f491eddfc6ca26a20c356efdb54cf155db8dc91478ebcae23a22b41c5cae46c1"
+metafile = true
+
+[[files]]
+file = "mods/what-are-they-up-to.pw.toml"
+hash = "d9439d9594d8666f09ac0634ee9bbcf82c430de010896f87e7cd44d17a4391d7"
 metafile = true
