@@ -11,6 +11,11 @@ hash = "e3dfb2478e6bb096667d4ec89b0ddfef627747939373bdefee02f358d6e3dee1"
 metafile = true
 
 [[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "0cbcd58c49decc0ecbccd330fcc8326e3b8769e22e1740e229f09541acf3df7f"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "d8c757f4a1f9d3abef4a3b25a889af423003a9b8af300d6e3e243f3f53f4d152"
 metafile = true
@@ -66,8 +71,23 @@ hash = "b9776960dcc40b4688a1ef1129932694cc8a5b7248c057284022446ac19101cf"
 metafile = true
 
 [[files]]
+file = "mods/farmers-delight-refabricated.pw.toml"
+hash = "d7f5c29f51b6e866f2227936ca124123ef5794813b791faf04d9fa66723bf2ff"
+metafile = true
+
+[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "39a6a39433b1b104bfafafcd60a8171f866daa2ebefffd64df822d0e69288e3a"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+hash = "bd0c76f438f67e2611fa8458ab153be304acfb4aaed4acebd0dcdfbbb74f1388"
+metafile = true
+
+[[files]]
+file = "mods/hybrid-aquatic.pw.toml"
+hash = "87d924c6bd605e2d2dbde7cc46a05de80f892fd002a899c0526f4505a9591c39"
 metafile = true
 
 [[files]]
@@ -121,6 +141,11 @@ hash = "13a6776b6e17d32a8dcc74932ce4af8b13290b1c90fe4c91b41abbd2b2c0d569"
 metafile = true
 
 [[files]]
+file = "mods/qkl.pw.toml"
+hash = "47217cc1489533f668d622f2078351a61873be573311a9a94be7293328a849a7"
+metafile = true
+
+[[files]]
 file = "mods/qsl.pw.toml"
 hash = "9e9da779b67e9a944da81e921ff76c3388dfe9a475a3ff4f597b27af814cd28a"
 metafile = true
@@ -143,6 +168,11 @@ metafile = true
 [[files]]
 file = "mods/sound.pw.toml"
 hash = "57a1d1fc1098912a65b7ed7b823d128c1e6bd7de0c0380f4c128788f0d6a9258"
+metafile = true
+
+[[files]]
+file = "mods/spice-of-life-valheim-edition.pw.toml"
+hash = "eaabf6cf6ff0575ebb642190f99f9e3951333eec07b12bf9261d288fb1720a43"
 metafile = true
 
 [[files]]
