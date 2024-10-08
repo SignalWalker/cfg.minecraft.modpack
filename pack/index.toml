@@ -6,6 +6,11 @@ hash = "e3dfb2478e6bb096667d4ec89b0ddfef627747939373bdefee02f358d6e3dee1"
 metafile = true
 
 [[files]]
+file = "mods/balm.pw.toml"
+hash = "d8c757f4a1f9d3abef4a3b25a889af423003a9b8af300d6e3e243f3f53f4d152"
+metafile = true
+
+[[files]]
 file = "mods/botarium.pw.toml"
 hash = "d4b79652245914a4f376f13a0a11c12b624613be9df788e227572ee7f5281f6c"
 metafile = true
@@ -66,6 +71,11 @@ hash = "a4ead715d6d053581edbbecac7d8cdae57d941503d0ccec8aca5ef26ba3b1341"
 metafile = true
 
 [[files]]
+file = "mods/journeymap.pw.toml"
+hash = "cc25ededaab4a0258c7032a675e9ffc54eac83c4a4f75d93e4034bfbeb0c05b7"
+metafile = true
+
+[[files]]
 file = "mods/lithium.pw.toml"
 hash = "c239c951796882b9c93e649a0dba4f2d95804441faaed707b686381b7a5c67da"
 metafile = true
@@ -121,13 +131,8 @@ hash = "acc29f4d30641c8138744b8c15cad479e17c601567de64b19ddb82aff37b3ad1"
 metafile = true
 
 [[files]]
-file = "mods/xaeros-minimap.pw.toml"
-hash = "c9115a7b1baf49c0fe57ab0f0c2c1e29b69a7986009927d2a73fc5d4a3df4f4c"
-metafile = true
-
-[[files]]
-file = "mods/xaeros-world-map.pw.toml"
-hash = "3f9c20d644445a631e0b23b54bff5c5e4f531626919c9d55b5fc5d4fd43b9c64"
+file = "mods/waystones.pw.toml"
+hash = "f491eddfc6ca26a20c356efdb54cf155db8dc91478ebcae23a22b41c5cae46c1"
 metafile = true
 
 [[files]]
