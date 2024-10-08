@@ -72,7 +72,7 @@
               };
               src = ./pack;
               installPhase = let
-                installMods = std.concatStringsSep "\n" (map (mod: "ln -sT ${mod} $out/${mod.passthru.filename}") (attrValues mods));
+                installMods = std.concatStringsSep "\n" (map (mod: "ln -sT '${mod}' \"$out/${mod.passthru.filename}\"") (attrValues mods));
               in ''
                 runHook preInstall
 
