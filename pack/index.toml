@@ -329,3 +329,8 @@ metafile = true
 file = "mods/what-are-they-up-to.pw.toml"
 hash = "d9439d9594d8666f09ac0634ee9bbcf82c430de010896f87e7cd44d17a4391d7"
 metafile = true
+
+[[files]]
+file = "mods/yacl.pw.toml"
+hash = "e012c2d48d8c2ef08e8a77a83476db46a81f9a5ee3aa90e5c57e2af508bd9089"
+metafile = true
