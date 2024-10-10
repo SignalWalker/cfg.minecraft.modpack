@@ -86,6 +86,11 @@ hash = "d4b79652245914a4f376f13a0a11c12b624613be9df788e227572ee7f5281f6c"
 metafile = true
 
 [[files]]
+file = "mods/cat_jam.pw.toml"
+hash = "6dc16648c4b9f4dbb2b27e2f8cbfc88984464ecce908c3cc2fe6106ca8223b77"
+metafile = true
+
+[[files]]
 file = "mods/chalk.pw.toml"
 hash = "6813cfc18a8812f00b3f6a7c5d01a02828b109d8c394f2c1b01bd5960c241120"
 metafile = true
