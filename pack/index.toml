@@ -31,6 +31,16 @@ hash = "0cbcd58c49decc0ecbccd330fcc8326e3b8769e22e1740e229f09541acf3df7f"
 metafile = true
 
 [[files]]
+file = "mods/armor-visibility.pw.toml"
+hash = "1d0b2428b3acae43795780eec89086f8fa2c38d05c049ecc7154f2c81cfd8376"
+metafile = true
+
+[[files]]
+file = "mods/ash-api.pw.toml"
+hash = "475f8702ced96f452044c5e3558a0d3f6e2c5bb707eb43e2da0307023e3a2ea9"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "d8c757f4a1f9d3abef4a3b25a889af423003a9b8af300d6e3e243f3f53f4d152"
 metafile = true
@@ -38,6 +48,11 @@ metafile = true
 [[files]]
 file = "mods/bclib.pw.toml"
 hash = "d71225c33f2287ca8c0f61483a8d9da35c80a69cb14f252dceaf0e504435bb7f"
+metafile = true
+
+[[files]]
+file = "mods/beans-backpacks.pw.toml"
+hash = "f2a0134d8fa6a434aa0e569783c4593ba82c477f044912bd763c8b1e28134bc0"
 metafile = true
 
 [[files]]
