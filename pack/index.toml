@@ -76,6 +76,11 @@ hash = "d4b79652245914a4f376f13a0a11c12b624613be9df788e227572ee7f5281f6c"
 metafile = true
 
 [[files]]
+file = "mods/cat_jam.pw.toml"
+hash = "6dc16648c4b9f4dbb2b27e2f8cbfc88984464ecce908c3cc2fe6106ca8223b77"
+metafile = true
+
+[[files]]
 file = "mods/chalk.pw.toml"
 hash = "6813cfc18a8812f00b3f6a7c5d01a02828b109d8c394f2c1b01bd5960c241120"
 metafile = true
@@ -393,11 +398,6 @@ metafile = true
 [[files]]
 file = "mods/what-are-they-up-to.pw.toml"
 hash = "d9439d9594d8666f09ac0634ee9bbcf82c430de010896f87e7cd44d17a4391d7"
-metafile = true
-
-[[files]]
-file = "mods/wildlife-fabric.pw.toml"
-hash = "1e587287bf4e47ef56eb87a1f3159b65b137e20e147d231a79a2874fade1f07f"
 metafile = true
 
 [[files]]
