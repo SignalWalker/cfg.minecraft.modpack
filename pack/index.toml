@@ -1,6 +1,16 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/accessories-tc-layer.pw.toml"
+hash = "856c61ddccf4a4937eaac7f355e126a1ad6a7a08206198578146e24048450585"
+metafile = true
+
+[[files]]
+file = "mods/accessories.pw.toml"
+hash = "fbbc11c87b7ae83618bfee50410e89e06d13ddc3a8b523d09d8307b00e58a820"
+metafile = true
+
+[[files]]
 file = "mods/ambientsounds.pw.toml"
 hash = "f9eed1d0570abf0533bb3eb44d81e6952e1f30392ef63028c7b8fffb679f872c"
 metafile = true
@@ -368,11 +378,6 @@ metafile = true
 [[files]]
 file = "mods/terralith.pw.toml"
 hash = "bd294726639dc8e4be6ea5c8c69ee6691a5d9554246b6ee5f5c23dc21d4f4b52"
-metafile = true
-
-[[files]]
-file = "mods/trinkets.pw.toml"
-hash = "07619668821f2aad9dbd40084ad80f25595d8715a9ef204a4a9629225729a7d9"
 metafile = true
 
 [[files]]
