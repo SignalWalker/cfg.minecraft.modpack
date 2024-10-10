@@ -11,11 +11,6 @@ hash = "7ba294e0897c1dd5017e83a45c9f39e5d01e935b72c647d4f10d489dbb50625e"
 metafile = true
 
 [[files]]
-file = "mods/amethyst-imbuement.pw.toml"
-hash = "8f891e6ce08e3d2771956d73602a4207bea3f94dbe2fca1a187c1443314fc4ee"
-metafile = true
-
-[[files]]
 file = "mods/another-furniture.pw.toml"
 hash = "525c8448074c4402b411c2b904eff4dae542834c649d13dc00475bd2546fe286"
 metafile = true
