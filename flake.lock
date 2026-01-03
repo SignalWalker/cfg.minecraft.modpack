@@ -36,10 +36,27 @@
         "type": "github"
       }
     },
+    "packwiz": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1763991199,
+        "narHash": "sha256-EVs2PngdapCUSf6J946rpJWnEbM8TtlDQQS/Zg16Qfs=",
+        "owner": "packwiz",
+        "repo": "packwiz",
+        "rev": "52b123018f9e19b49703f76e78ad415642acf5c5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "packwiz",
+        "repo": "packwiz",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flake-parts": "flake-parts",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "packwiz": "packwiz"
       }
     }
   },

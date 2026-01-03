@@ -6,6 +6,11 @@
       url = "github:hercules-ci/flake-parts";
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
+    packwiz = {
+      url = "github:packwiz/packwiz";
+      # inputs.nixpkgs.follows = "nixpkgs";
+      flake = false;
+    };
   };
   outputs =
     inputs@{
@@ -37,11 +42,16 @@
             formatter = pkgs.nixfmt-rfc-style;
             devShells = {
               default = pkgs.mkShell {
-                packages = [ pkgs.packwiz ];
+                packages = [ self'.packages.packwiz ];
               };
             };
             packages = {
               default = self'.packages.${serverName};
+              packwiz = pkgs.buildGoModule {
+                name = "packwiz";
+                src = inputs.packwiz;
+                vendorHash = "sha256-P1SsvHTYKUoPve9m1rloBfMxUNcDKr/YYU4dr4vZbTE=";
+              };
               ${serverName} =
                 let
                   inherit (builtins)
