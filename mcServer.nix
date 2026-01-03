@@ -1,8 +1,7 @@
-mmcPackType:
+pack: pkgs: mmcPackType:
 {
   config,
   lib,
-  pkgs,
   name,
   ...
 }:
@@ -81,6 +80,7 @@ mmcPackType:
       };
       mods = mkOption {
         type = types.package;
+        default = pack;
       };
       prism =
         let
@@ -106,7 +106,7 @@ mmcPackType:
             default = pkgs.stdenvNoCC.mkDerivation {
               name = "${config.mods.passthru.pack.name}.zip";
               src = ./prism;
-              instance_cfg = ini.generate "instance.cfg" config.instanceCfg;
+              instance_cfg = ini.generate "instance.cfg" config.prism.instanceCfg;
               packwiz_bootstrap = pkgs.fetchurl {
                 url = "https://github.com/packwiz/packwiz-installer-bootstrap/releases/download/v0.0.3/packwiz-installer-bootstrap.jar";
                 hash = "sha256-qPuyTcYEJ46X9GiOgtPZGjGLmO/AjV2/y8vKtkQ9EWw=";
@@ -141,36 +141,26 @@ mmcPackType:
         };
       };
     };
-  # config = {
-  #   prism.mmcPack.components = {
-  #     "LWJGL 3".version = "3.3.1";
-  #     "Minecraft".version = config.minecraft.version;
-  #     "Quilt Loader".version = config.quilt.version;
-  #   };
-  #   # prism.instanceCfg = {
-  #   #   ConfigVersion = "1.2";
-  #   #   InstanceType = "OneSix";
-  #   #   JoinServerOnLaunch = false;
-  #   #   OverrideCommands = true;
-  #   #   OverrideConsole = false;
-  #   #   OverrideGameTime = false;
-  #   #   OverrideJavaArgs = false;
-  #   #   OverrideJavaLocation = false;
-  #   #   OverrideMemory = false;
-  #   #   OverrideMiscellaneous = false;
-  #   #   OverrideModLoaderSettings = false;
-  #   #   OverrideNativeWorkarounds = false;
-  #   #   OverridePerformance = false;
-  #   #   OverrideWindow = false;
-  #   #   PostExitCommand = "";
-  #   #   PreLaunchCommand =
-  #   #     lib.mkIf (config.packwiz.hostName != null)
-  #   #       "\"$INST_JAVA\" -jar packwiz-installer-bootstrap.jar http://${config.packwiz.hostName}/${config.name}/pack.toml";
-  #   #   UseAccountForInstance = false;
-  #   #   WrapperCommand = "";
-  #   #   iconKey = "fox";
-  #   #   name = config.prism.instanceName;
-  #   #   notes = "";
-  #   # };
-  # };
+  config = {
+    prism.mmcPack.components = {
+      "LWJGL 3".version = "3.3.1";
+      "Minecraft".version = config.minecraft.version;
+      "Quilt Loader".version = config.quilt.version;
+    };
+    prism.instanceCfg = {
+      General = {
+        ConfigVersion = "1.2";
+        InstanceType = "OneSix";
+        OverrideCommands = true;
+        PostExitCommand = "";
+        PreLaunchCommand =
+          lib.mkIf (config.packwiz.hostName != null)
+            "\"$INST_JAVA\" -jar packwiz-installer-bootstrap.jar http://${config.packwiz.hostName}/${config.name}/pack.toml";
+        WrapperCommand = "";
+        iconKey = "fox";
+        name = config.prism.instanceName;
+        notes = "";
+      };
+    };
+  };
 }

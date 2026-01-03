@@ -19,7 +19,7 @@
     }:
 
     flake-parts.lib.mkFlake { inherit inputs; } (
-      { lib, ... }:
+      { moduleWithSystem, lib, ... }:
       let
         serverName = "playground";
       in
@@ -29,7 +29,7 @@
           "x86_64-linux"
         ];
         flake = {
-          nixosModules.default = (import ./nixosModule.nix) inputs serverName;
+          nixosModules.default = moduleWithSystem ((import ./nixosModule.nix) serverName);
         };
         perSystem =
           {
