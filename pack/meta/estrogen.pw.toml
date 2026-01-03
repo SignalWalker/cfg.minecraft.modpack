@@ -1,0 +1,13 @@
+name = "Estrogen"
+filename = "estrogen-5.0.1+1.20.1-fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/HhIJW8n1/versions/f5ZeBRAy/estrogen-5.0.1%2B1.20.1-fabric.jar"
+hash-format = "sha512"
+hash = "5526676a4f63f766e04b1bcc1bc1aa64a1893192c80783c738bdeea85aaf865d08571d475c5bc2cfac152e8012793114bc1aaa9e80a0c6b3094fcd09cbd3cfa4"
+
+[update]
+[update.modrinth]
+mod-id = "HhIJW8n1"
+version = "f5ZeBRAy"

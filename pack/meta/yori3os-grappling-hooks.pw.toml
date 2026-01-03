@@ -1,0 +1,13 @@
+name = "Yori3o's Grappling Hooks"
+filename = "yo_hooks-fabric-3.4.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/t1p8V2nl/versions/sOWMxUXq/yo_hooks-fabric-3.4.0.jar"
+hash-format = "sha512"
+hash = "5d7bafc3388604c042d2a718371055ce0396f2539480c8207d3c98393c3c5796791ca1a3ab5b2163e960565ecddf05ee5f943afa362a7e12dae2b0630f85a05e"
+
+[update]
+[update.modrinth]
+mod-id = "t1p8V2nl"
+version = "sOWMxUXq"
