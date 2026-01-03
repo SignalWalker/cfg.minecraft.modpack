@@ -1,9 +1,10 @@
 source $stdenv/setup
 
-set -e
+set -xe
 
 cp -r $src ./build
 chmod -R +w ./build
+cp "$instance_cfg" ./build/instance.cfg
 cp "$packwiz_bootstrap" ./build/.minecraft/packwiz-installer-bootstrap.jar
 cp "$MMC_PACK_JSON" ./build/mmc-pack.json
 

@@ -1,11 +1,12 @@
-pkgs: {
+pkgs:
+{
   config,
   lib,
   ...
 }:
-with builtins; let
-  std = pkgs.lib;
-  json = pkgs.formats.json {};
+with builtins;
+let
+  json = pkgs.formats.json { };
   comp = config.components;
   jgl = comp."LWJGL 3";
   mc = comp."Minecraft";
@@ -13,24 +14,28 @@ with builtins; let
   interm = comp."Intermediary Mappings";
   component = lib.types.submoduleWith {
     modules = [
-      ({
-        config,
-        pkgs,
-        lib,
-        ...
-      }: {
-        options = with lib; {
-          version = mkOption {
-            type = types.str;
+      (
+        {
+          config,
+          pkgs,
+          lib,
+          ...
+        }:
+        {
+          options = with lib; {
+            version = mkOption {
+              type = types.str;
+            };
+            uid = mkOption {
+              type = types.str;
+            };
           };
-          uid = mkOption {
-            type = types.str;
-          };
-        };
-      })
+        }
+      )
     ];
   };
-in {
+in
+{
   options = with lib; {
     components = {
       "LWJGL 3" = mkOption {

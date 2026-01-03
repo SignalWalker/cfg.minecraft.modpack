@@ -8,7 +8,6 @@ serverName:
 }:
 let
   inherit (builtins) attrValues map;
-  # ini = pkgs.formats.ini { };
 in
 {
   options =
@@ -27,6 +26,7 @@ in
               options =
                 let
                   inherit (lib) mkEnableOption mkOption types;
+                  ini = pkgs.formats.ini { };
                 in
                 {
                   name = mkOption {
@@ -107,11 +107,19 @@ in
                     mmcPack = mkOption {
                       type = types.submoduleWith { modules = [ (import ./mmcPack.nix pkgs) ]; };
                     };
+                    instanceName = mkOption {
+                      type = types.str;
+                      default = config.name;
+                    };
+                    instanceCfg = mkOption {
+                      type = ini.type;
+                    };
                     instance = mkOption {
                       type = types.package;
                       default = pkgs.stdenvNoCC.mkDerivation {
                         name = "${config.mods.passthru.pack.name}.zip";
                         src = ./prism;
+                        instance_cfg = ini.generate "instance.cfg" config.instanceCfg;
                         packwiz_bootstrap = pkgs.fetchurl {
                           url = "https://github.com/packwiz/packwiz-installer-bootstrap/releases/download/v0.0.3/packwiz-installer-bootstrap.jar";
                           hash = "sha256-qPuyTcYEJ46X9GiOgtPZGjGLmO/AjV2/y8vKtkQ9EWw=";
@@ -120,7 +128,7 @@ in
                           MMC_PACK_JSON = config.prism.mmcPack.outputFile;
                         };
                         builder = ./build-pack.sh;
-                        nativeBuildInputs = with pkgs; [ zip ];
+                        nativeBuildInputs = [ pkgs.zip ];
                       };
                     };
                   };
@@ -146,7 +154,33 @@ in
                     };
                   };
                 };
-
+              config = {
+                prism.instanceCfg = {
+                  ConfigVersion = "1.2";
+                  InstanceType = "OneSix";
+                  JoinServerOnLaunch = false;
+                  OverrideCommands = true;
+                  OverrideConsole = false;
+                  OverrideGameTime = false;
+                  OverrideJavaArgs = false;
+                  OverrideJavaLocation = false;
+                  OverrideMemory = false;
+                  OverrideMiscellaneous = false;
+                  OverrideModLoaderSettings = false;
+                  OverrideNativeWorkarounds = false;
+                  OverridePerformance = false;
+                  OverrideWindow = false;
+                  PostExitCommand = "";
+                  PreLaunchCommand =
+                    lib.mkIf (config.packwiz.hostName != null)
+                      "\"$INST_JAVA\" -jar packwiz-installer-bootstrap.jar http://${config.packwiz.hostName}/${config.name}/pack.toml";
+                  UseAccountForInstance = false;
+                  WrapperCommand = "";
+                  iconKey = "fox";
+                  name = config.prism.instanceName;
+                  notes = "";
+                };
+              };
             }
           )
         ];
@@ -178,7 +212,6 @@ in
                 "Quilt Loader".version = server.quilt.version;
               };
             };
-
           }
         )
       ]
@@ -272,8 +305,12 @@ in
             };
             services.nginx.virtualHosts = lib.mkIf (server.packwiz.hostName != null) {
               ${server.packwiz.hostName} = {
-                root = server.mods.passthru.packwizRoot;
-                locations."=/${server.prism.name}.zip".alias = server.prism.instance;
+                locations = {
+                  "=/${server.name}/${server.prism.name}.zip".alias = server.prism.instance;
+                  "/${server.name}" = {
+                    root = server.mods.passthru.packwizRoot;
+                  };
+                };
               };
             };
           }
