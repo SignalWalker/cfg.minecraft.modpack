@@ -37,7 +37,7 @@ metafile = true
 
 [[files]]
 file = "meta/create-fabric.pw.toml"
-hash = "f76188c6e4714a70ea367d7f7a566b05c935a9f19e23f0352f4eb0271a985376"
+hash = "46a162d1fedacdbd79351958eb0c1a68ed55c12bc2cc57eec41829c7a4198303"
 metafile = true
 
 [[files]]
