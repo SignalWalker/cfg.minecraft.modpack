@@ -59,17 +59,23 @@ pack: pkgs: mmcPackType:
           };
         };
       };
-      quilt = {
-        installer = mkOption {
-          type = types.package;
-          default = pkgs.fetchurl {
-            url = "https://maven.quiltmc.org/repository/release/org/quiltmc/quilt-installer/0.9.2/quilt-installer-0.9.2.jar";
-            hash = "sha256-w60+I+7oYOUYXFlOfLKA5Pq+fnZqg5RTgdmpnGSFXFs=";
-          };
-        };
+      # quilt = {
+      #   installer = mkOption {
+      #     type = types.package;
+      #     default = pkgs.fetchurl {
+      #       url = "https://maven.quiltmc.org/repository/release/org/quiltmc/quilt-installer/0.9.2/quilt-installer-0.9.2.jar";
+      #       hash = "sha256-w60+I+7oYOUYXFlOfLKA5Pq+fnZqg5RTgdmpnGSFXFs=";
+      #     };
+      #   };
+      #   version = mkOption {
+      #     type = types.str;
+      #     default = config.mods.passthru.pack.versions.quilt;
+      #   };
+      # };
+      neoforge = {
         version = mkOption {
           type = types.str;
-          default = config.mods.passthru.pack.versions.quilt;
+          default = config.mods.passthru.pack.versions.neoforge;
         };
       };
       minecraft = {
@@ -143,9 +149,10 @@ pack: pkgs: mmcPackType:
     };
   config = {
     prism.mmcPack.components = {
-      "LWJGL 3".version = "3.3.1";
+      "LWJGL 3".version = "3.3.3";
       "Minecraft".version = config.minecraft.version;
-      "Quilt Loader".version = config.quilt.version;
+      "NeoForge".version = config.neoforge.version;
+      # "Quilt Loader".version = config.quilt.version;
     };
     prism.instanceCfg = {
       General = {

@@ -10,8 +10,9 @@ let
   comp = config.components;
   jgl = comp."LWJGL 3";
   mc = comp."Minecraft";
-  quilt = comp."Quilt Loader";
-  interm = comp."Intermediary Mappings";
+  nf = comp."NeoForge";
+  # quilt = comp."Quilt Loader";
+  # interm = comp."Intermediary Mappings";
   component = lib.types.submoduleWith {
     modules = [
       (
@@ -44,12 +45,15 @@ in
       "Minecraft" = mkOption {
         type = component;
       };
-      "Intermediary Mappings" = mkOption {
+      "NeoForge" = mkOption {
         type = component;
       };
-      "Quilt Loader" = mkOption {
-        type = component;
-      };
+      # "Intermediary Mappings" = mkOption {
+      #   type = component;
+      # };
+      # "Quilt Loader" = mkOption {
+      #   type = component;
+      # };
     };
     outputFile = mkOption {
       type = types.path;
@@ -83,30 +87,42 @@ in
             "version" = mc.version;
           }
           {
-            "cachedName" = "Intermediary Mappings";
+            "cachedName" = "NeoForge";
             "cachedRequires" = [
               {
-                "equals" = interm.version;
+                "equals" = mc.version;
                 "uid" = mc.uid;
               }
             ];
-            "cachedVersion" = interm.version;
-            "cachedVolatile" = true;
-            "dependencyOnly" = true;
-            "uid" = interm.uid;
-            "version" = interm.version;
+            "cachedVersion" = nf.version;
+            "uid" = nf.uid;
+            "version" = nf.version;
           }
-          {
-            "cachedName" = "Quilt Loader";
-            "cachedRequires" = [
-              {
-                "uid" = interm.uid;
-              }
-            ];
-            "cachedVersion" = quilt.version;
-            "uid" = quilt.uid;
-            "version" = quilt.version;
-          }
+          # {
+          #   "cachedName" = "Intermediary Mappings";
+          #   "cachedRequires" = [
+          #     {
+          #       "equals" = interm.version;
+          #       "uid" = mc.uid;
+          #     }
+          #   ];
+          #   "cachedVersion" = interm.version;
+          #   "cachedVolatile" = true;
+          #   "dependencyOnly" = true;
+          #   "uid" = interm.uid;
+          #   "version" = interm.version;
+          # }
+          # {
+          #   "cachedName" = "Quilt Loader";
+          #   "cachedRequires" = [
+          #     {
+          #       "uid" = interm.uid;
+          #     }
+          #   ];
+          #   "cachedVersion" = quilt.version;
+          #   "uid" = quilt.uid;
+          #   "version" = quilt.version;
+          # }
         ];
         "formatVersion" = 1;
       };
@@ -116,11 +132,12 @@ in
     components = {
       "LWJGL 3".uid = "org.lwjgl3";
       "Minecraft".uid = "net.minecraft";
-      "Intermediary Mappings" = {
-        version = mc.version;
-        uid = "net.fabricmc.intermediary";
-      };
-      "Quilt Loader".uid = "org.quiltmc.quilt-loader";
+      "NeoForge".uid = "net.neoforged";
+      # "Intermediary Mappings" = {
+      #   version = mc.version;
+      #   uid = "net.fabricmc.intermediary";
+      # };
+      # "Quilt Loader".uid = "org.quiltmc.quilt-loader";
     };
   };
 }
