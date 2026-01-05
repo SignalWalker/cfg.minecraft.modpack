@@ -173,7 +173,7 @@ pack: pkgs: mmcPackType:
         PostExitCommand = "";
         PreLaunchCommand =
           lib.mkIf (config.packwiz.hostName != null)
-            "\"$INST_JAVA\"  -jar packwiz-installer-bootstrap.jar http://${config.packwiz.hostName}/${config.name}/pack.toml";
+            "$INST_JAVA -jar packwiz-installer-bootstrap.jar http://${config.packwiz.hostName}/${config.name}/pack.toml";
         WrapperCommand = "";
         iconKey = "fox";
         name = config.prism.instanceName;
