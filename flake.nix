@@ -104,7 +104,7 @@
                       // {
                         ${toml.name} = fetchMod toml;
                       }
-                  ) { } (lib.filesystem.listFilesRecursive ./pack/meta);
+                  ) { } (lib.filesystem.listFilesRecursive ./pack/mods);
                 in
                 pkgs.stdenvNoCC.mkDerivation {
                   pname = pack.name;

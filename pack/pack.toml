@@ -1,17 +1,13 @@
 name = "Playground"
-author = "Ash Walker"
+author = "Ash"
 version = "1.0.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "44946cf496b1da84fb17e86df8bffed0ac99a99a8fcd7ae75d1b211aa8739519"
+hash = "6cf59b50063be687356ab5e7a7d55dd634c92d4d80692de742b50d228827ab50"
 
 [versions]
-minecraft = "1.20.1"
-quilt = "0.30.0-beta.0"
-
-[options]
-datapack-folder = "datapacks"
-meta-folder = "meta"
+minecraft = "1.21.1"
+neoforge = "21.1.217"
