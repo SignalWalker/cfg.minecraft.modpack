@@ -50,6 +50,16 @@ serverName:
                   argument = toString server.mods;
                 };
               };
+              "${server.dir.state}/user_jvm_args.txt" = {
+                "L+" = {
+                  argument = toString (
+                    pkgs.writeText "user_jvm_args.txt" ''
+                      -Xms${server.java.memory.initial}
+                      -Xmx${server.java.memory.max}
+                    ''
+                  );
+                };
+              };
               ${server.environmentFile} = {
                 "f" = {
                   mode = "0640";
@@ -80,9 +90,11 @@ serverName:
                   User = server.user;
                   Group = server.group;
                 };
+                # java -jar ${server.quilt.installer} install server "${server.minecraft.version}" "${server.quilt.version}" --install-dir="${server.dir.state}" --download-server --create-scripts
                 script = ''
-                  set -e
-                  java -jar ${server.quilt.installer} install server "${server.minecraft.version}" "${server.quilt.version}" --install-dir="${server.dir.state}" --download-server --create-scripts
+                  set -xe
+                  echo "eula=true" > "${server.dir.state}/eula.txt"
+                  java -jar ${server.neoforge.installer} --install-server "${server.dir.state}"
                 '';
               };
               ${systemdService} = {
@@ -95,7 +107,8 @@ serverName:
                   EnvironmentFile = server.environmentFile;
 
                   Type = "simple";
-                  ExecStart = "${server.java.package}/bin/java -Xms${server.java.memory.initial} -Xmx${server.java.memory.max} -jar ${server.dir.state}/quilt-server-launch.jar nogui";
+                  ExecStart = "${pkgs.busybox}/bin/sh ${server.dir.state}/run.sh nogui";
+                  # ExecStart = "java -Xms${server.java.memory.initial} -Xmx${server.java.memory.max} -jar ${server.dir.state}/quilt-server-launch.jar nogui";
                   ExecStop = "${server.rcon.package}/bin/mcrcon -H localhost -P ${toString server.rcon.port} -p \"$MINECRAFT_RCON_PASSWORD\" stop";
                   SuccessExitStatus = [
                     0

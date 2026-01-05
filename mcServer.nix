@@ -46,7 +46,7 @@ pack: pkgs: mmcPackType:
       java = {
         package = mkOption {
           type = types.package;
-          default = pkgs.temurin-bin-17;
+          default = pkgs.temurin-bin-21;
         };
         memory = {
           initial = mkOption {
@@ -73,6 +73,17 @@ pack: pkgs: mmcPackType:
       #   };
       # };
       neoforge = {
+        installer = mkOption {
+          type = types.package;
+          default =
+            let
+              version = config.neoforge.version;
+            in
+            pkgs.fetchurl {
+              url = "https://maven.neoforged.net/releases/net/neoforged/neoforge/${version}/neoforge-${version}-installer.jar";
+              hash = "sha256-L2tyiqmWRqaX6wdVzncOlF+VCQxCSOtY9VisDi41eMY=";
+            };
+        };
         version = mkOption {
           type = types.str;
           default = config.mods.passthru.pack.versions.neoforge;
@@ -162,7 +173,7 @@ pack: pkgs: mmcPackType:
         PostExitCommand = "";
         PreLaunchCommand =
           lib.mkIf (config.packwiz.hostName != null)
-            "\"$INST_JAVA\" -jar packwiz-installer-bootstrap.jar http://${config.packwiz.hostName}/${config.name}/pack.toml";
+            "\"$INST_JAVA\"  -jar packwiz-installer-bootstrap.jar http://${config.packwiz.hostName}/${config.name}/pack.toml";
         WrapperCommand = "";
         iconKey = "fox";
         name = config.prism.instanceName;
