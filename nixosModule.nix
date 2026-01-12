@@ -44,10 +44,53 @@ serverName:
       systemd = merge (
         name: server: {
           tmpfiles.settings = {
+            "98-minecraft-${server.name}" = {
+              "${server.dir.configuration}/config" = {
+                "d" = {
+                  user = server.user;
+                  group = server.group;
+                  mode = "0750";
+                };
+              };
+              "${server.dir.logs}/logs" = {
+                "d" = {
+                  user = server.user;
+                  group = server.group;
+                  mode = "0750";
+                };
+              };
+              "${server.dir.logs}/crash-reports" = {
+                "d" = {
+                  user = server.user;
+                  group = server.group;
+                  mode = "0750";
+                };
+              };
+            };
             "99-minecraft-${server.name}" = {
-              "${server.dir.state}/mods" = {
+              # "${server.dir.state}/mods" = {
+              #   "L+" = {
+              #     argument = toString server.mods;
+              #   };
+              # };
+              "${server.dir.state}/config" = {
+                "L" = {
+                  argument = "${server.dir.configuration}/config";
+                };
+              };
+              "${server.dir.state}/logs" = {
                 "L+" = {
-                  argument = toString server.mods;
+                  argument = "${server.dir.logs}/logs";
+                };
+              };
+              "${server.dir.state}/crash-reports" = {
+                "L+" = {
+                  argument = "${server.dir.logs}/crash-reports";
+                };
+              };
+              "${server.dir.state}/.cache" = {
+                "L+" = {
+                  argument = server.dir.cache;
                 };
               };
               "${server.dir.state}/user_jvm_args.txt" = {
@@ -107,6 +150,29 @@ serverName:
                   EnvironmentFile = server.environmentFile;
 
                   Type = "simple";
+                  ExecStartPre = pkgs.writeShellScript "${systemdService}-pre" ''
+                    set -xe
+
+                    state_dir="${server.dir.state}"
+                    cache_dir="${server.dir.cache}"
+                    logs_dir="${server.dir.logs}"
+                    config_dir="${server.dir.configuration}"
+
+                    mods_dir="$state_dir/mods"
+
+                    index_dir="$cache_dir/sinytra/index"
+                    connector_dir="$cache_dir/sinytra/connector"
+
+                    # set up mods directory
+                    if [[ -e "$mods_dir" ]]; then
+                      rm -r "$mods_dir"
+                    fi
+                    cp -r "${toString server.mods}" "$mods_dir"
+                    chmod ug+w "$mods_dir"
+                    mkdir -p "$index_dir" "$connector_dir"
+                    ln -sfT "$index_dir" "$mods_dir/.index"
+                    ln -sfT "$connector_dir" "$mods_dir/.connector"
+                  '';
                   ExecStart = "${pkgs.busybox}/bin/sh ${server.dir.state}/run.sh nogui";
                   # ExecStart = "java -Xms${server.java.memory.initial} -Xmx${server.java.memory.max} -jar ${server.dir.state}/quilt-server-launch.jar nogui";
                   ExecStop = "${server.rcon.package}/bin/mcrcon -H localhost -P ${toString server.rcon.port} -p \"$MINECRAFT_RCON_PASSWORD\" stop";
@@ -118,6 +184,8 @@ serverName:
                   Group = server.group;
 
                   StateDirectory = server.user;
+                  CacheDirectory = server.user;
+                  LogsDirectory = server.user;
                   ConfigurationDirectory = server.user;
                   WorkingDirectory = server.dir.state;
 

@@ -36,6 +36,8 @@ pack: pkgs: mmcPackType:
         in
         {
           state = mkDir "/var/lib";
+          cache = mkDir "/var/cache";
+          logs = mkDir "/var/log";
           configuration = mkDir "/etc";
         };
       environmentFile = mkOption {
