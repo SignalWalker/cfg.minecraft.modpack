@@ -216,6 +216,11 @@ hash = "04ba8a8c91a6c25c42321493a2d233762bb01169fac5fd834e434887cdbf8596"
 metafile = true
 
 [[files]]
+file = "mods/plasmo-voice.pw.toml"
+hash = "24754a40ca7d2d3ce8647d14dfedd8784e2062fc0dae02395ecb9cfc592f28ed"
+metafile = true
+
+[[files]]
 file = "mods/ribbits.pw.toml"
 hash = "6a598c073aabc968d8ee736141d238c517e13662f3de0feb81796cb9c0d6f4f0"
 metafile = true
