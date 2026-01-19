@@ -261,6 +261,11 @@ hash = "24754a40ca7d2d3ce8647d14dfedd8784e2062fc0dae02395ecb9cfc592f28ed"
 metafile = true
 
 [[files]]
+file = "mods/pv-addon-groups.pw.toml"
+hash = "7a51b041979e7584c922ae8aefdb6de7b1a4d3ac443d16d594a4508ff6ac41a0"
+metafile = true
+
+[[files]]
 file = "mods/ribbits.pw.toml"
 hash = "6a598c073aabc968d8ee736141d238c517e13662f3de0feb81796cb9c0d6f4f0"
 metafile = true
