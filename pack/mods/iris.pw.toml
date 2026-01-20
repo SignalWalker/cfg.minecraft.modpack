@@ -11,3 +11,8 @@ hash = "57b8026a3c3c433cf6123d63dc6ce7e11f6d480a72926370db1fc7f2b06059bc16a753ec
 [update.modrinth]
 mod-id = "YL57xq9U"
 version = "t3ruzodq"
+
+[option]
+optional = true
+default = true
+description = "Shader pack loader"

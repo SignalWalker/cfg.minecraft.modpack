@@ -11,3 +11,8 @@ hash = "6ee8b04af858450eac2e0fe6c3a6cb09dfc0f9c1691fb0f76f79bbc73e08e5dca6f18257
 [update.modrinth]
 mod-id = "uCdwusMi"
 version = "bLPLghy9"
+
+[option]
+optional = true
+default = true
+description = "Generates low-detail terrain models so you can see farther than your actual view distance without blowing up your GPU"

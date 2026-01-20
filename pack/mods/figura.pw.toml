@@ -11,3 +11,8 @@ hash = "a2e4e58d2aabc5a3352ef605155f92eb7d617419e24d651806d748f4b5cde3bc"
 [update.modrinth]
 mod-id = "s9gIPDom"
 version = "yXFi1fed"
+
+[option]
+optional = true
+default = true
+description = "Lets you use fancy custom models for your avatar"

@@ -87,7 +87,7 @@ metafile = true
 
 [[files]]
 file = "mods/distanthorizons.pw.toml"
-hash = "61ce79aeecd3101399a33bbea16444736f2988b363a63c9f3b6a2c4fb0b3828a"
+hash = "3c9f0e68efe082514d0fc773654e27c4b95f97a2935af3e29f9c583467d80c25"
 metafile = true
 
 [[files]]
@@ -117,12 +117,12 @@ metafile = true
 
 [[files]]
 file = "mods/ferrite-core.pw.toml"
-hash = "05d96d5b17399f048469ff4b44451eb8d99cc7a2a075ff55718c397cb508b0c2"
+hash = "b43411970eb088f24089c8b2d3c6b8fa4b595341233c3c9b86845c8c2dac2f23"
 metafile = true
 
 [[files]]
 file = "mods/figura.pw.toml"
-hash = "df203edf786f331ca1de93768c600e2d6ef49cedf041235807cd7856299e0296"
+hash = "a74f0ad66494d629d1ff99398ce66affa2f7a7ececaaacb8ea81cb49bdcc6e6b"
 metafile = true
 
 [[files]]
@@ -147,7 +147,7 @@ metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
-hash = "5f1dc2d965a2764f1d9fa02d34932898593de140a4243d83f2e43f4663f2ed7e"
+hash = "315943c7f952be7238f97fb623dbccb8843efd4e1a3a85ba34cd256d4dd4b60d"
 metafile = true
 
 [[files]]
@@ -162,7 +162,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
-hash = "f67aa60c765593a8c70f78296a460349c6aef5f4a16d173eae02e8803b545ad4"
+hash = "f09138593ffbbb7084bfbdd6bc7db3b553d27a00c245f90481600c528e5672f8"
 metafile = true
 
 [[files]]
@@ -297,7 +297,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "0281ed9713f3141bdac363056a791845510e14761ea65b4b2813cf96d664b20a"
+hash = "773db1a146bea1064450f69c1509ee7d7b5d20529be27573dc495ac85ada3519"
 metafile = true
 
 [[files]]

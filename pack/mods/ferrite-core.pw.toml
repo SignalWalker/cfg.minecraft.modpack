@@ -11,3 +11,8 @@ hash = "2a5a7b79473c42572bdbbd1f429a459630d793b35f3eb17051139a94bced2d13c39e9c63
 [update.modrinth]
 mod-id = "uXXizFIs"
 version = "CnpoQxCx"
+
+# [option]
+# optional = true
+# default = true
+# description = "Memory usage optimization"
