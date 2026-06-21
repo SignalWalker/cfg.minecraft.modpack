@@ -56,6 +56,11 @@ hash = "aa242da373359065cb62d8e1094e2f17b456f3ea300db145896cf6c6aae43101"
 metafile = true
 
 [[files]]
+file = "mods/create-aeronautics.pw.toml"
+hash = "5fab8d2e412683dfd72f08cf6750e51b03cb43192e8eb783e962ba28d20978bc"
+metafile = true
+
+[[files]]
 file = "mods/create-curios-jetpack.pw.toml"
 hash = "b8e662516d509fc3fcc6036955373de4760e3c43093f31117cef927fb7e4e619"
 metafile = true
@@ -67,7 +72,7 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "9da22561c3a5e45beb91121518a49f2e8a62bedb332574ce43a9d9b287ebc705"
+hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
 metafile = true
 
 [[files]]
@@ -283,6 +288,11 @@ metafile = true
 [[files]]
 file = "mods/ribbits.pw.toml"
 hash = "6a598c073aabc968d8ee736141d238c517e13662f3de0feb81796cb9c0d6f4f0"
+metafile = true
+
+[[files]]
+file = "mods/sable.pw.toml"
+hash = "674aaf0dc67f808f0054cfc7bbe041d6725fcbbe97644a85ffbd946a22d35666"
 metafile = true
 
 [[files]]
