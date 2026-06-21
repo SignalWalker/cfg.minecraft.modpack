@@ -1,13 +1,13 @@
 name = "Ghost"
-filename = "ghosts-neoforge-1.21.1-1.2.3.jar"
+filename = "ghosts-neoforge-1.21.1-1.3.3.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/gJKLGvbS/versions/mgTnNivI/ghosts-neoforge-1.21.1-1.2.3.jar"
+url = "https://cdn.modrinth.com/data/gJKLGvbS/versions/BwxKp4u2/ghosts-neoforge-1.21.1-1.3.3.jar"
 hash-format = "sha512"
-hash = "2db9021197838588f20177eae2f944e0fbba26c0de052c314083fedcd80639442e75b5fd4722b8b99edf009c9f8df40348f8807a34934f4a455d1c4ca069b462"
+hash = "616e415613602cfef65f7074ca59f0ba1a303a370c043ff9682310e04434426acc0ae9218af9be08e8bb26d9bad9ae1b7242bc42d6b479b8c864eeaaa70b4cc2"
 
 [update]
 [update.modrinth]
 mod-id = "gJKLGvbS"
-version = "mgTnNivI"
+version = "BwxKp4u2"

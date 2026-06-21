@@ -1,13 +1,13 @@
 name = "Sparkles: Stardust Labs Resourcepack"
-filename = "Sparkles_1.21.x_v1.1.6.zip"
+filename = "Sparkles_26.1_v1.1.7.zip"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/HfNmMQ9E/versions/S8Oe9FyR/Sparkles_1.21.x_v1.1.6.zip"
+url = "https://cdn.modrinth.com/data/HfNmMQ9E/versions/AIg6K6QE/Sparkles_26.1_v1.1.7.zip"
 hash-format = "sha512"
-hash = "685d13abcb1fbae9b40afd7202e30d452e00332d4a3fb0905b591d0ba4e2fc8017034ddf7179c66978d9eac7bd88910dbd42a273a08428e396f68a649905ba79"
+hash = "1be343e31a0a8184446bdcf62bb5442d268a9349b8503b8460dc964391658a58b294b8e88609ab2c3ed293e2966a4ecd1dab251fde43aa9f75905bafed279d1b"
 
 [update]
 [update.modrinth]
 mod-id = "HfNmMQ9E"
-version = "S8Oe9FyR"
+version = "AIg6K6QE"
