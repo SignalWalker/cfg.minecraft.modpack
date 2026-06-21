@@ -50,15 +50,13 @@
               packwiz = pkgs.buildGoModule {
                 name = "packwiz";
                 src = inputs.packwiz;
-                vendorHash = "sha256-P1SsvHTYKUoPve9m1rloBfMxUNcDKr/YYU4dr4vZbTE=";
+                vendorHash = "sha256-ChUE4hWl+UyPpbzK0GbJTD0AoBCogI7qGstga4+WujI=";
               };
               ${serverName} =
                 let
                   inherit (builtins)
-                    fromTOML
                     readFile
                     substring
-                    toString
                     foldl'
                     attrValues
                     ;
