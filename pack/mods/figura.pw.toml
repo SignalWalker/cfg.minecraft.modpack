@@ -1,18 +1,18 @@
 name = "Figura"
-filename = "figura-0.1.5+1.21.1-neoforge-patched.jar"
+filename = "figura-0.1.6+1.21.1-neoforge-mc.jar"
 side = "client"
 
 [download]
-url = "https://github.com/penguinencounter/Figura/releases/download/sodium-patched-jars-placeholder/figura-0.1.5+1.21.1-neoforge-patched.jar"
-hash-format = "sha256"
-hash = "a2e4e58d2aabc5a3352ef605155f92eb7d617419e24d651806d748f4b5cde3bc"
+url = "https://cdn.modrinth.com/data/s9gIPDom/versions/AvgeQoZm/figura-0.1.6%2B1.21.1-neoforge-mc.jar"
+hash-format = "sha512"
+hash = "c1e74ce833887f40af0939a373a77a7ed865ad0dfcbf17441f55f0e77ba0b2bd662f4ab7821a740ba883ce2a650ab5eb70311d1aad5233b2a0f07e6ac41c7691"
 
 [update]
 [update.modrinth]
 mod-id = "s9gIPDom"
-version = "yXFi1fed"
+version = "AvgeQoZm"
 
 [option]
 optional = true
-default = true
 description = "Lets you use fancy custom models for your avatar"
+default = true

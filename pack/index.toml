@@ -87,7 +87,7 @@ metafile = true
 
 [[files]]
 file = "mods/distanthorizons.pw.toml"
-hash = "3c9f0e68efe082514d0fc773654e27c4b95f97a2935af3e29f9c583467d80c25"
+hash = "723b48e265a06efe1f5c61f66a3a808840024dbef6e0715a634197b2082ef9c0"
 metafile = true
 
 [[files]]
@@ -122,7 +122,7 @@ metafile = true
 
 [[files]]
 file = "mods/figura.pw.toml"
-hash = "a74f0ad66494d629d1ff99398ce66affa2f7a7ececaaacb8ea81cb49bdcc6e6b"
+hash = "7599c1cc94ec81c53604cdc77f349d2e38f95a2ca28b59c6b61d92f5d6f3c911"
 metafile = true
 
 [[files]]
