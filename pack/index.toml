@@ -256,8 +256,8 @@ hash = "604b7674b96d10b2c9f03e47a91ec50b448e8193de56f36fca93b5ff0f3132f6"
 metafile = true
 
 [[files]]
-file = "mods/mimi.pw.toml"
-hash = "5a3cb15ece27aaca83bc167468bbad97b3f964b8889e3c067e244decd126b7a2"
+file = "mods/music-maker-mod.pw.toml"
+hash = "b7f6318e6373adbc2bfc84f603cacef92bba5b060c6097dbdf2fb239d29b761c"
 metafile = true
 
 [[files]]
