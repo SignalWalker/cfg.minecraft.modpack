@@ -151,6 +151,11 @@ hash = "e53646f88aeb6bd54c38db50da972abdac91e83c145a8f974107b0ca103b15bc"
 metafile = true
 
 [[files]]
+file = "mods/grapplemod-skybound.pw.toml"
+hash = "e2ec4d2dbf88e45a09198b9a44ca0553c1e458701e6757997d0d5055b39bb7be"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "fc17b103e14d55065258a713dea03d5f56905d98b674131385d3dc45eade8b34"
 metafile = true
@@ -283,6 +288,16 @@ metafile = true
 [[files]]
 file = "mods/ribbits.pw.toml"
 hash = "6a598c073aabc968d8ee736141d238c517e13662f3de0feb81796cb9c0d6f4f0"
+metafile = true
+
+[[files]]
+file = "mods/sable-ragdoll-corpse.pw.toml"
+hash = "e48a9f24f9c0e937b4aa46bcfec7e8ceaa40a4f29f4ea1c659c6d28575560320"
+metafile = true
+
+[[files]]
+file = "mods/sable-ragdolls.pw.toml"
+hash = "bf3c84eff52457596d58a73882e72759804117f0731a0fde343cfd54d33e55ba"
 metafile = true
 
 [[files]]
