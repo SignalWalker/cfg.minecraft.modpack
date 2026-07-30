@@ -83,7 +83,7 @@ pack: pkgs: mmcPackType:
             in
             pkgs.fetchurl {
               url = "https://maven.neoforged.net/releases/net/neoforged/neoforge/${version}/neoforge-${version}-installer.jar";
-              hash = "sha256-S40WMsa8GI+qL01txTpT9D+LGIw/II5RAv4u6C36+Ok=";
+              hash = "sha256-b6FGKUkaeW11o5vDG25l6zY2trouE2hXfAYboFkei+Q=";
             };
         };
         version = mkOption {
