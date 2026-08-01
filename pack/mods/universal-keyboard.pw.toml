@@ -1,0 +1,13 @@
+name = "Universal Keyboard Controller"
+filename = "universalkeyboard-1.3.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/vnZAETyV/versions/NkdELhcm/universalkeyboard-1.3.4.jar"
+hash-format = "sha512"
+hash = "f6e7ab4134084e051e4e9a93ee334c0ef76dd02e917154bd4fdf33e3297db78c64c94fbe9d659679f752aee65a09ae999792696391576557c5efb8d1068fe87a"
+
+[update]
+[update.modrinth]
+mod-id = "vnZAETyV"
+version = "NkdELhcm"

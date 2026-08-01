@@ -356,6 +356,11 @@ hash = "0ccb1c696758d7935d02dd5160987cab8d3594ab24f89deb01c28f9e596094e7"
 metafile = true
 
 [[files]]
+file = "mods/universal-keyboard.pw.toml"
+hash = "322816f3c4edefe09ceb029fba64c9c85eb4dfb3de4c1951c6a4824797a277c5"
+metafile = true
+
+[[files]]
 file = "mods/yacl.pw.toml"
 hash = "539f362e9e192cf3b2813e0dfdfc51a5e6814129c6e82a9733842529beea6242"
 metafile = true
