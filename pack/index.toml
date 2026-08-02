@@ -1,16 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = "mods/accessories-compat-layer.pw.toml"
-hash = "c255cf4cd29718e3ab0a4c18df8bb7b626e0092c5aad7b4e67f34fc1ad4492f8"
-metafile = true
-
-[[files]]
-file = "mods/accessories.pw.toml"
-hash = "19cbfb37dc29169b50599dfa328fe12a0ec9caaec8ac02627b5846f3bd9d1425"
-metafile = true
-
-[[files]]
 file = "mods/alternate-current.pw.toml"
 hash = "18cf2b63d293ba0738c1073690fbd2c62305b161f76d346a551a66a9bbf8af32"
 metafile = true
@@ -78,6 +68,11 @@ metafile = true
 [[files]]
 file = "mods/connector.pw.toml"
 hash = "c19c2e5a0b485648c801c4663ece3596d7e3bd1164f9065f27242346655066bf"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-lift-patch.pw.toml"
+hash = "434d92388783bd89bfad57891f43b7bab9b9c3b16800fd1d8de5f76049a2f304"
 metafile = true
 
 [[files]]
