@@ -86,11 +86,6 @@ hash = "5fab8d2e412683dfd72f08cf6750e51b03cb43192e8eb783e962ba28d20978bc"
 metafile = true
 
 [[files]]
-file = "mods/create-coasters-simulated.pw.toml"
-hash = "8d3d93487823b5c630123d9796f670114f9ffefc5361fc133a6a30be2f6369ed"
-metafile = true
-
-[[files]]
 file = "mods/create.pw.toml"
 hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
 metafile = true
